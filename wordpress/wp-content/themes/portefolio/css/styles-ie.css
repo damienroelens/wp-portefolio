@@ -1,0 +1,104 @@
+.scene {
+  margin-top: 50px;
+  width:600px;
+  height:400px;
+  -webkit-perspective: none;
+  perspective: none;
+  position:absolute;
+  top:0;
+  right:0;
+}
+.comp .cube {
+  position: static;
+  -webkit-transform-style: none;
+  transform-style: none;
+  transition: none;
+  -webkit-transition: none;
+}
+.cube-face{
+    opacity: 1;
+    border-radius: 10px;
+}
+.comp .cube-face * div{
+  position: relative;
+  background: red;
+}
+// faces
+.cube-face-front {
+  background: #eee;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  z-index:2;
+}  
+.cube-face-back {
+  background: #eee;
+  -webkit-transform:none;
+  -ms-transform: none;
+  transform: none;
+  z-index:-1000;
+} 
+.cube-face-left {
+  background: #eee;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  z-index:-3;
+} 
+.cube-face-right {
+  background: #eee;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  z-index:-4;
+} 
+.cube-face-top {
+  background: #eee;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  z-index:-5;
+} 
+.cube-face-bottom {
+  background: #eee;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  z-index:-6;
+}  
+// controls 
+#radio-front:checked ~ .scene .cube-face-front {
+  -webkit-transform: none; 
+  -ms-transform: none; 
+  transform: none; 
+  z-index:3;
+} 
+#radio-back:checked ~ .scene .cube {
+  -webkit-transform: none; 
+  -ms-transform: none; 
+  transform: none; 
+} 
+#radio-left:checked ~ .scene .cube-face-left {
+  -webkit-transform: none; 
+  -ms-transform: none; 
+  transform: none; 
+  z-index:3;
+} 
+#radio-right:checked ~ .scene .cube-face-right {
+  -webkit-transform: none; 
+  -ms-transform: none; 
+  transform: none; 
+  z-index:3;
+}
+#radio-top:checked ~ .scene .cube-face-top {
+  -webkit-transform: none; 
+  -ms-transform: none; 
+  transform: none; 
+  z-index:3;
+}  
+#radio-bottom:checked ~ .scene .cube-face-bottom {
+  -webkit-transform: none; 
+  -ms-transform:none; 
+  transform: none;
+  z-index:3; 
+}
