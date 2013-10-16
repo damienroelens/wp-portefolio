@@ -1,7 +1,5 @@
 <?php 
-
 /* 
 Template name:Propos 
 */ 
-
 ?>

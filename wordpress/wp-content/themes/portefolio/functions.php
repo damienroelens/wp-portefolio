@@ -31,6 +31,33 @@
 		register_nav_menu( 'primary', __( 'Primary Menu', 'portefolio' ) );
 	}
 
+	function EH_get_post_type_date_link( $post_type, $year, $month = 0, $day = 0 ) {
+    global $wp_rewrite;
+    $post_type_obj = get_post_type_object( $post_type );
+    $post_type_slug = $post_type_obj->rewrite['slug'] ? $post_type_obj->rewrite['slug'] : $post_type_obj->name;
+    if( $day ) { // day archive link
+        // set to today's values if not provided
+        if ( !$year )
+            $year = gmdate('Y', current_time('timestamp'));
+        if ( !$month )
+            $month = gmdate('m', current_time('timestamp'));
+        $link = $wp_rewrite->get_day_permastruct();
+    } else if ( $month ) { // month archive link
+        if ( !$year )
+            $year = gmdate('Y', current_time('timestamp'));
+        $link = $wp_rewrite->get_month_permastruct();
+    } else { // year archive link
+        $link = $wp_rewrite->get_year_permastruct();
+    }
+    if ( !empty($link) ) {
+        $link = str_replace('%year%', $year, $link);
+        $link = str_replace('%monthnum%', zeroise(intval($month), 2), $link );
+        $link = str_replace('%day%', zeroise(intval($day), 2), $link );
+        return home_url( "$post_type_slug$link" );
+    }
+    return home_url( "$post_type_slug" );
+    }
+
 	function create_post_type() {
 		register_post_type( 'projets',
 			array(
@@ -40,7 +67,7 @@
 				),
 			'public' => true,
 			'has_archive' => true,
-			'supports' => array('title','editor','author','custom-fields','excerpt','thumbnail',),
+			'supports' => array('title','editor','author','custom-fields','excerpt','thumbnail','date'),
 			'taxonomies' => array('category','post_tag')
 			)
 		);
