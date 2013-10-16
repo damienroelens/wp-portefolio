@@ -5,7 +5,7 @@
 	<section id="wrapper">
 		<div class="contain">
 			<?php $the_query = new WP_Query( array('post_type' => 'galerie') ); ?>
-			<h2>Galerie de projets</h2>
+			<h2><?php _e('Galerie de projets') ?></h2>
 			<?php if($the_query->have_posts()): ?>
 				<?php while($the_query->have_posts()) : $the_query->the_post(); ?>
 				<figure>
@@ -27,7 +27,7 @@
 			<?php $the_query = new WP_Query( array('post_type' => 'moi') ); ?>
 			<?php if($the_query->have_posts()): ?>
 				<?php while($the_query->have_posts()) : $the_query->the_post(); ?>
-			<h3>Qui suis-je ?</h3>
+			<h3><?php the_title() ?></h3>
 			<p><?php the_field('pres_left') ?></p>
 			<div class="presimg">
 				<img src="<?php the_field('pres_image'); ?>" alt="Photo Damien Roelens" />
@@ -42,7 +42,7 @@
 	<section id="catwork">
 		<div class="contain">
 			<?php $the_query = new WP_Query( array('post_type' => 'catpro', 'orderby' => 'rand') ); ?>
-			<h3>Catégories de travaux</h3>
+			<h3><?php  _e('Catégories de travaux')?></h3>
 			<?php if($the_query->have_posts()): ?>
 				<?php while($the_query->have_posts()) : $the_query->the_post(); ?>
 			<figure>
@@ -56,11 +56,15 @@
 			<?php wp_reset_postdata(); ?>
 		</div>
 		<aside>
-			<h4>Projets aléatoires</h4>
+			<h4><?php  _e('Projets aléatoires')?></h4>
 			<ul>
-				<li><a href=""><span class="icons-sprite icons-pencil"> Travail X</span></a></li>
-				<li><a href=""><span class="icons-sprite icons-wordpress"> Travail X</span></a></li>
-				<li><a href=""><span class="icons-sprite icons-mobile"> Travail X</span></a></li>
+				<?php $the_query = new WP_Query( array('post_type' => 'projets', 'orderby' => 'rand') ); ?>
+					<?php if($the_query->have_posts()): ?>
+						<?php while($the_query->have_posts()) : $the_query->the_post(); ?>
+				<li><a href="<?php the_permalink() ?>"><span class="icons-sprite <?php $cats = get_the_category(); $cat_name = $cats[0]->description; echo($cat_name); ?>"> <?php the_title() ?></span></a></li>
+					<?php endwhile; ?>
+				<?php endif; ?>
+			<?php wp_reset_postdata(); ?>
 			</ul>
 		</aside>
 	</section>

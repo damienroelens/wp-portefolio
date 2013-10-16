@@ -40,8 +40,8 @@
 				),
 			'public' => true,
 			'has_archive' => true,
-			'supports' => array('title','editor','author','custom-fields','excerpt','thumbnail'),
-			'taxonomy' => ('travaux')
+			'supports' => array('title','editor','author','custom-fields','excerpt','thumbnail',),
+			'taxonomies' => array('category','post_tag')
 			)
 		);
 
