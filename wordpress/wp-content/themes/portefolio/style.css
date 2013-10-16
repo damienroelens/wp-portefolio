@@ -110,35 +110,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @font-face {
   font-family: 'Lane';
-  src: url("./webfonts/LANENAR_.ttf") format("truetype"); }
+  src: url("./css/webfonts/LANENAR_.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'Open';
-  src: url("./webfonts/OpenSans-Bold.ttf") format("truetype");
+  src: url("./css/webfonts/OpenSans-Bold.ttf") format("truetype");
   font-weight: bold; }
 
 @font-face {
   font-family: 'Open sans';
-  src: url("./webfonts/OpenSans-Regular.ttf") format("truetype"); }
+  src: url("./css/webfonts/OpenSans-Regular.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'Socialico';
-  src: url("./webfonts/Socialico.ttf") format("truetype"); }
+  src: url("./css/webfonts/Socialico.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'Lane';
-  src: url("./webfonts/LANENAR_.eot");
+  src: url("./css/webfonts/LANENAR_.eot");
   font-family: 'Socialico';
-  src: url("./webfonts/Socialico.eot"); }
+  src: url("./css/webfonts/Socialico.eot"); }
 
 /* line 39, scss/style.scss */
 body {
   font-family: Open sans, Helvetica, Arial, "sans-serif";
-  background: transparent url("../img/cream_pixels.png"); }
+  background: transparent url("./img/cream_pixels.png"); }
 
 /* line 44, scss/style.scss */
 header {
-  background: #111111 url(../img/black_lozenge.png); }
+  background: #111111 url(./img/black_lozenge.png); }
 
 /* line 47, scss/style.scss */
 div.contain {
@@ -151,7 +151,7 @@ h1 {
   font: 50px/1.5 Lane, "sans-serif";
   padding: 15px 0px;
   line-height: 70px;
-  background-image: url(../img/logoc.png);
+  background-image: url(./img/logoc.png);
   background-repeat: no-repeat;
   background-position: 0px 20px; }
 /* line 61, scss/style.scss */
@@ -192,7 +192,7 @@ p {
 
 /* line 99, scss/style.scss */
 nav {
-  background: #484548 url(../img/stripe.png);
+  background: #484548 url(./img/stripe.png);
   font: 16px/1.5 Open, Helvetica, Arial, "sans-serif";
   font-weight: bold; }
 /* line 104, scss/style.scss */
@@ -405,14 +405,14 @@ aside a:hover {
 
 /* line 294, scss/style.scss */
 section.blacky {
-  background: #484548 url(../img/stripe.png);
+  background: #484548 url(./img/stripe.png);
   color: #eee;
   padding-bottom: 40px;
   padding-top: 40px; }
 
 /* line 300, scss/style.scss */
 section#present {
-  background: #484548 url(../img/stripe.png);
+  background: #484548 url(./img/stripe.png);
   color: #eee;
   padding-bottom: 40px;
   padding-top: 40px; }
@@ -454,7 +454,7 @@ section#present div.trame {
   left: 0;
   height: 100%;
   width: 100%;
-  background: url("../img/trame.png");
+  background: url("./img/trame.png");
   z-index: 10; }
 
 /* line 350, scss/style.scss */
@@ -560,7 +560,7 @@ section#present div.trame {
   left: 0;
   height: 100%;
   width: 100%;
-  background: url("../img/trame.png");
+  background: url("./img/trame.png");
   z-index: 10; }
 /* line 456, scss/style.scss */
 .contac form {
@@ -803,7 +803,7 @@ section#wrapper {
 
 /* line 695, scss/style.scss */
 footer {
-  background: #484548 url(../img/stripe.png);
+  background: #484548 url(./img/stripe.png);
   text-align: center;
   min-height: 146px; }
 /* line 701, scss/style.scss */

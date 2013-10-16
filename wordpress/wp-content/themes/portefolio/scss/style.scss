@@ -19,14 +19,14 @@ $size: 400px;
 @import "icons/*.png";
 @include all-icons-sprites;
 
-@font-face {font-family: 'Lane';src: url('./webfonts/LANENAR_.ttf') format('truetype');}
-@font-face {font-family: 'Open';src: url('./webfonts/OpenSans-Bold.ttf') format('truetype'); font-weight:bold;}
-@font-face {font-family: 'Open sans';src: url('./webfonts/OpenSans-Regular.ttf') format('truetype');}
-@font-face {font-family: 'Socialico';src: url('./webfonts/Socialico.ttf') format('truetype');}
+@font-face {font-family: 'Lane';src: url('./css/webfonts/LANENAR_.ttf') format('truetype');}
+@font-face {font-family: 'Open';src: url('./css/webfonts/OpenSans-Bold.ttf') format('truetype'); font-weight:bold;}
+@font-face {font-family: 'Open sans';src: url('./css/webfonts/OpenSans-Regular.ttf') format('truetype');}
+@font-face {font-family: 'Socialico';src: url('./css/webfonts/Socialico.ttf') format('truetype');}
 
 @font-face {
-  font-family: 'Lane';src: url("./webfonts/LANENAR_.eot");
-  font-family: 'Socialico';src: url("./webfonts/Socialico.eot");
+  font-family: 'Lane';src: url("./css/webfonts/LANENAR_.eot");
+  font-family: 'Socialico';src: url("./css/webfonts/Socialico.eot");
 }
 
 $fontStackTitle: Lane ,'sans-serif';
@@ -38,11 +38,11 @@ $fontStackP: Verdana,Helvetica,Arial,'sans-serif';
 
 body{
 	font-family: $fontStackText;
-	background:transparent url('../img/cream_pixels.png');
+	background:transparent url('./img/cream_pixels.png');
 }
 
 header{
-	background: #111 url(../img/black_lozenge.png);
+	background: #111 url(./img/black_lozenge.png);
 }
 div.contain{
 	width:1200px;
@@ -54,7 +54,7 @@ h1{
 	font: 50px/1.5 $fontStackTitle;
 	padding:15px 0px;
 	line-height: 70px;
-	background-image:url(../img/logoc.png);
+	background-image:url(./img/logoc.png);
 	background-repeat: no-repeat;
 	background-position: 0px 20px;
 
@@ -97,7 +97,7 @@ p{
 }
 
 nav{
-	background: #484548 url(../img/stripe.png);
+	background: #484548 url(./img/stripe.png);
 	font: 16px/1.5 $fontStackNav ;
 	font-weight: bold;
 
@@ -292,14 +292,14 @@ aside{
 	}
 }
 section.blacky{
-	background: #484548 url(../img/stripe.png);
+	background: #484548 url(./img/stripe.png);
 	color:#eee;
 	padding-bottom:40px;
 	padding-top:40px;
 }
 section#present{
 	
-	background: #484548 url(../img/stripe.png);
+	background: #484548 url(./img/stripe.png);
 	color:#eee;
 	padding-bottom:40px;
 	padding-top:40px;
@@ -342,7 +342,7 @@ section#present{
 		left: 0;
 		height: 100%;
 		width: 100%;
-		background: url('../img/trame.png');
+		background: url('./img/trame.png');
 		z-index: 10;
 	}
 }
@@ -448,7 +448,7 @@ section#present{
 		left: 0;
 		height: 100%;
 		width: 100%;
-		background: url('../img/trame.png');
+		background: url('./img/trame.png');
 		z-index: 10;
 		}
 	}
@@ -694,7 +694,7 @@ section#wrapper{
 
  footer{
 
-	background: #484548 url(../img/stripe.png);
+	background: #484548 url(./img/stripe.png);
 	text-align: center;
 	min-height: 146px;
 

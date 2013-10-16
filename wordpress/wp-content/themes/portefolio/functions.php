@@ -40,7 +40,58 @@
 				),
 			'public' => true,
 			'has_archive' => true,
+			'supports' => array('title','editor','author','custom-fields','excerpt','thumbnail'),
+			'taxonomy' => ('travaux')
+			)
+		);
+
+		register_post_type( 'menu',
+			array(
+				'labels' => array(
+					'name' => __( 'Menu' ),
+					'singular_name' => __( 'Menu' )
+				),
+			'public' => true,
+			'has_archive' => true,
 			'supports' => array('title','editor','author','custom-fields','excerpt','thumbnail')
 			)
 		);
-	}
+
+		register_post_type( 'galerie',
+			array(
+				'labels' => array(
+					'name' => __( 'Galerie' ),
+					'singular_name' => __( 'Galerie' )
+				),
+			'public' => true,
+			'has_archive' => true,
+			'supports' => array('title','editor','author','custom-fields','excerpt','thumbnail')
+			)
+		);
+		register_post_type( 'moi',
+			array(
+				'labels' => array(
+					'name' => __( 'Moi' ),
+					'singular_name' => __( 'Moi' )
+				),
+			'public' => true,
+			'has_archive' => true,
+			'supports' => array('title','editor','author','custom-fields','excerpt','thumbnail')
+			)
+		);
+		register_post_type( 'catpro',
+			array(
+				'labels' => array(
+					'name' => __( 'Catégories Projets' ),
+					'singular_name' => __( 'Catégorie Projets' )
+				),
+			'public' => true,
+			'has_archive' => true,
+			'supports' => array('title','editor','author','custom-fields','excerpt','thumbnail')
+			)
+		);
+	
+}
+
+
+	
