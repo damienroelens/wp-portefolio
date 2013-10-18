@@ -1,14 +1,12 @@
 on est dans single.php
+<?php echo(get_query_var( 'name' )) ?>
+
 
 <?php $the_query = new WP_Query( array('post_type' => 'projets', 'orderby' => 'date') ); ?>
 					<?php if($the_query->have_posts()): ?>
 						<?php while($the_query->have_posts()) : $the_query->the_post(); ?>
 
-						<?php
-						$arc_year = get_the_date(__('Y'));
-
-						?>
-						<a href="<?php echo EH_get_post_type_date_link('projets',$arc_year); ?>">Archive de <?php the_time('Y') ?></a>
+						<a href="<?php echo EH_get_post_type_date_link('projets',get_the_time('Y')); ?>">Archive de <?php the_time('Y') ?></a>
 
 						<p><a href=""><?php the_tags('') ?></a></p>
 

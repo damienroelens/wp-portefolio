@@ -46,7 +46,7 @@
 			<?php if($the_query->have_posts()): ?>
 				<?php while($the_query->have_posts()) : $the_query->the_post(); ?>
 			<figure>
-				<a href="">
+				<a href="<?php the_permalink() ?>">
 					<img src="<?php the_field('image_cat') ?>" alt="">
 					<figcaption><?php the_title() ?><p><?php the_field('texte_categorie') ?></p></figcaption>
 				</a>
