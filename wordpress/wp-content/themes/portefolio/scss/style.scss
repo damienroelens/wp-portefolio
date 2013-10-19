@@ -15,7 +15,7 @@ Text Domain: portefolio
 @import "compass";
 @import "compass/reset";
 $icons-spacing: 20px;
-$size: 400px;
+$size: 400px; //taille du cube page à propos
 @import "icons/*.png";
 @include all-icons-sprites;
 
@@ -291,14 +291,14 @@ aside{
 	}
 }
 section.blacky{
-	background: #484548 url(./img/stripe.png);
+	background: #282528 url(./img/black_lozenge.png);
 	color:#eee;
 	padding-bottom:40px;
 	padding-top:40px;
 }
 section#present{
 	
-	background: #484548 url(./img/stripe.png);
+	background: #282528 url(./img/black_lozenge.png);
 	color:#eee;
 	padding-bottom:40px;
 	padding-top:40px;
@@ -350,11 +350,12 @@ section#present{
 	margin-top:40px;
 	& img{
 		margin:20px;
-		float:left;
+		display: inline-block;
 	}
 	& ul{
-		height:200px;
-		margin-left:400px;
+		display: inline-block;
+		vertical-align: top;
+		margin-left:80px;
 	}
 	
 	& ul>li:last-child a{
@@ -496,6 +497,35 @@ section#present{
 
 .propos{
 	margin-top:40px;
+	& label{
+		padding-left:50px;
+		position:relative;
+	}
+	& input[type=radio] {  
+	    display: none;  
+	}  
+	& label:before {  
+	    content: "";  
+	    display: inline-block;  
+	    width: 16px;  
+	    height: 16px;  
+	    border-radius: 8px; 
+	    margin-right: 10px;  
+	    position: absolute;
+	    top:16px;  
+	    left: 16px;  
+	    bottombottom: 1px;  
+	    background-color: #aaa;  
+	    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);  
+	} 
+	& input[type=radio]:checked + label:before {  
+		font-family: 'times new roman';
+	    content: "\2022";  
+	    color: #444;  
+	    font-size: 36px;  
+	    text-align: center;  
+	    line-height: 14px;  
+	}
 }
 
 .scene {
@@ -693,7 +723,7 @@ section#wrapper{
 
  footer{
 
-	background: #484548 url(./img/stripe.png);
+	background: #484548 url(./img/black_lozenge.png);
 	text-align: center;
 	min-height: 146px;
 

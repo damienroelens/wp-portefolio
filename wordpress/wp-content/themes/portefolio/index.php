@@ -9,7 +9,7 @@
 			<?php if($the_query->have_posts()): ?>
 				<?php while($the_query->have_posts()) : $the_query->the_post(); ?>
 				<figure>
-					<a href="#">
+					<a href="<?php the_permalink() ?>">
 					<img src="<?php the_field('image_slider') ?>" alt="">
 					<figcaption>
 						<h3><?php the_title() ?></h3>

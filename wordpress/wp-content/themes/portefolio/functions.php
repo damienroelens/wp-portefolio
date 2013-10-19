@@ -41,7 +41,9 @@
 				),
 			'public' => true,
 			'has_archive' => true,
-			'supports' => array('title','editor','author','custom-fields','excerpt','thumbnail'),
+			'menu_icon' => get_bloginfo(template_url).'/img/menu/html5.png',
+			'supports' => array('title','editor','author','custom-fields','excerpt','thumbnail','category'),
+			'taxonomies' => array('category','post_tag')
 			)
 		);
 
@@ -53,6 +55,8 @@
 				),
 			'public' => true,
 			'has_archive' => true,
+			'rewrite' => array('slug' => '/'),
+			'menu_icon' => get_bloginfo(template_url).'/img/menu/menu2.png',
 			'supports' => array('title','editor','author','custom-fields','excerpt','thumbnail')
 			)
 		);
@@ -65,6 +69,8 @@
 				),
 			'public' => true,
 			'has_archive' => true,
+			'rewrite' => array('slug' => 'projets'),
+			'menu_icon' => get_bloginfo(template_url).'/img/menu/images.png',
 			'supports' => array('title','editor','author','custom-fields','excerpt','thumbnail')
 			)
 		);
@@ -76,6 +82,7 @@
 				),
 			'public' => true,
 			'has_archive' => true,
+			'menu_icon' => get_bloginfo(template_url).'/img/menu/user.png',
 			'supports' => array('title','editor','author','custom-fields','excerpt','thumbnail')
 			)
 		);
@@ -86,8 +93,9 @@
 					'singular_name' => __( 'Catégorie Projets' )
 				),
 			'public' => true,
-			'rewrite' => array('slug' => 'category'),
+			'rewrite' => array('slug' => 'category'), //permet de rediriger le custom post type catpro vers les categories de base et les lier avec les cat projets
 			'has_archive' => true,
+			'menu_icon' => get_bloginfo(template_url).'/img/menu/tree.png',
 			'supports' => array('title','editor','author','custom-fields','excerpt','thumbnail')
 			)
 		);
@@ -96,7 +104,7 @@
 
 
 
-	/**
+/**
  * Custom post type date archives
  */
 
