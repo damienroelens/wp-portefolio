@@ -26,8 +26,12 @@
 				<?php if($the_query->have_posts()): ?>
 					<?php while($the_query->have_posts()) : $the_query->the_post(); ?>
 
-							<li><a href="<?php the_field('lien_menu_navigation')?>"><span class="icon-sprite <?php the_field('classe_icone')?>"><?php the_title(); ?></span></a></li>
-			
+							<li><a href="<?php if(is_archive()){
+								echo(site_url());echo('/'.$post->post_name);
+							} else {
+								the_field('lien_menu_navigation');
+							} ?>"><span class="icon-sprite <?php the_field('classe_icone')?>"><?php the_title(); ?></span></a></li>
+							
 						
 						<?php endwhile; ?>
 				<?php endif; ?>

@@ -2,6 +2,10 @@ on est dans archive
 
 
 
+<?php 
+	get_header();
+ ?>
+
 <?php  
 
 $args = array( 'post_type' => 'projets', 'posts_per_page' => 10 );
@@ -15,3 +19,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
 endwhile;
 
 ?> 
+
+<?php 
+	get_footer();
+ ?>
