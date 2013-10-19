@@ -123,7 +123,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 @font-face {
   font-family: 'Socialico';
-  src: url("./css/webfonts/Socialico.ttf") format("truetype"); }
+  src: url("./css/webfonts/Socialico.ttf") format("truetype"), url("./css/webfonts/Socialico.woff") format("woff"); }
 
 @font-face {
   font-family: 'Lane';
@@ -665,92 +665,91 @@ section#present div.trame {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   transition: transform 0.6s linear;
-  -webkit-transition: -webkit-transform 0.6s linear; }
+  -webkit-transition: -webkit-transform 0.6s linear;
+  -webkit-transform: rotateY(10deg);
+  -ms-transform: rotateY(10deg);
+  transform: rotateY(10deg); }
 
-/* line 562, scss/style.scss */
+/* line 566, scss/style.scss */
 .cube-face {
   width: inherit;
   height: inherit;
   position: absolute;
-  background: red;
-  opacity: 0.8; }
+  background: #484548 url(./img/stripe.png);
+  opacity: 1;
+  color: #eeeeee;
+  border: 1px solid #39ad39; }
 
-/* line 570, scss/style.scss */
+/* line 576, scss/style.scss */
 .cube-face-front {
-  background: #eee;
   -webkit-transform: translate3d(0, 0, 200px);
   -ms-transform: translate3d(0, 0, 200px);
   transform: translate3d(0, 0, 200px); }
 
-/* line 576, scss/style.scss */
+/* line 582, scss/style.scss */
 .cube-face-back {
-  background: #eee;
   -webkit-transform: rotateY(180deg) translate3d(0, 0, 200px);
   -ms-transform: rotateY(180deg) translate3d(0, 0, 200px);
   transform: rotateY(180deg) translate3d(0, 0, 200px); }
 
-/* line 582, scss/style.scss */
+/* line 588, scss/style.scss */
 .cube-face-left {
-  background: #eee;
   -webkit-transform: rotateY(-90deg) translate3d(0, 0, 200px);
   -ms-transform: rotateY(-90deg) translate3d(0, 0, 200px);
   transform: rotateY(-90deg) translate3d(0, 0, 200px); }
 
-/* line 588, scss/style.scss */
+/* line 594, scss/style.scss */
 .cube-face-right {
-  background: #eee;
   -webkit-transform: rotateY(90deg) translate3d(0, 0, 200px);
   -ms-transform: rotateY(90deg) translate3d(0, 0, 200px);
   transform: rotateY(90deg) translate3d(0, 0, 200px); }
 
-/* line 594, scss/style.scss */
+/* line 600, scss/style.scss */
 .cube-face-top {
-  background: #eee;
   -webkit-transform: rotateX(90deg) translate3d(0, 0, 200px);
   -ms-transform: rotateX(90deg) translate3d(0, 0, 200px);
   transform: rotateX(90deg) translate3d(0, 0, 200px); }
 
-/* line 600, scss/style.scss */
+/* line 606, scss/style.scss */
 .cube-face-bottom {
-  background: #eee;
   -webkit-transform: rotateX(-90deg) translate3d(0, 0, 200px);
   -ms-transform: rotateX(-90deg) translate3d(0, 0, 200px);
   transform: rotateX(-90deg) translate3d(0, 0, 200px); }
 
-/* line 607, scss/style.scss */
+/* line 613, scss/style.scss */
 #radio-back:checked ~ .scene .cube {
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
-/* line 612, scss/style.scss */
+/* line 618, scss/style.scss */
 #radio-left:checked ~ .scene .cube {
-  -webkit-transform: rotateY(90deg);
-  -ms-transform: rotateY(90deg);
-  transform: rotateY(90deg); }
+  -webkit-transform: rotateY(100deg);
+  -ms-transform: rotateY(100deg);
+  transform: rotateY(100deg); }
 
-/* line 617, scss/style.scss */
+/* line 623, scss/style.scss */
 #radio-right:checked ~ .scene .cube {
-  -webkit-transform: rotateY(-90deg);
-  -ms-transform: rotateY(-90deg);
-  transform: rotateY(-90deg); }
+  -webkit-transform: rotateY(-100deg);
+  -ms-transform: rotateY(-100deg);
+  transform: rotateY(-100deg); }
 
-/* line 622, scss/style.scss */
+/* line 628, scss/style.scss */
 #radio-top:checked ~ .scene .cube {
-  -webkit-transform: rotateX(-90deg);
-  -ms-transform: rotateX(-90deg);
-  transform: rotateX(-90deg); }
-
-/* line 627, scss/style.scss */
-#radio-bottom:checked ~ .scene .cube {
-  -webkit-transform: rotateX(90deg);
-  -ms-transform: rotateX(90deg);
-  transform: rotateX(90deg); }
+  -webkit-transform: rotateX(-90deg) rotateZ(10deg);
+  -ms-transform: rotateX(-90deg) rotateZ(10deg);
+  transform: rotateX(-90deg) rotateZ(10deg); }
 
 /* line 633, scss/style.scss */
+#radio-bottom:checked ~ .scene .cube {
+  -webkit-transform: rotateX(90deg) rotateZ(10deg);
+  -ms-transform: rotateX(90deg) rotateZ(10deg);
+  transform: rotateX(90deg) rotateZ(10deg); }
+
+/* line 639, scss/style.scss */
 .comp {
   min-height: 400px; }
-/* line 636, scss/style.scss */
+/* line 642, scss/style.scss */
 .comp label {
   display: block;
   width: 40%;
@@ -759,13 +758,13 @@ section#present div.trame {
   color: #39AD39;
   font-family: Open, Helvetica, Arial, "sans-serif";
   font-weight: bold; }
-/* line 645, scss/style.scss */
+/* line 651, scss/style.scss */
 .comp input {
   float: left;
   position: relative;
   top: 14px;
   width: 5%; }
-/* line 651, scss/style.scss */
+/* line 657, scss/style.scss */
 .comp label:hover, .comp input:focus + label {
   background: rgba(50, 50, 50, 0.5);
   -webkit-border-radius: 5px;
@@ -778,37 +777,69 @@ section#present div.trame {
   -o-text-shadow: 0px 0px 2px #111;
   text-shadow: 0px 0px 2px #111; }
 
-/* line 665, scss/style.scss */
+/* line 671, scss/style.scss */
 section#wrapper.cont-up {
   margin-top: 80px; }
 
-/* line 669, scss/style.scss */
+/* line 675, scss/style.scss */
 section#wrapper {
   margin-top: 40px; }
 
-/* line 677, scss/style.scss */
+/* line 683, scss/style.scss */
 #wrapper figure {
   position: relative;
   display: inline; }
-/* line 680, scss/style.scss */
+/* line 686, scss/style.scss */
 #wrapper figure img {
   width: 32%;
   height: 32%; }
-/* line 684, scss/style.scss */
+/* line 690, scss/style.scss */
 #wrapper figure figcaption {
   display: none; }
-/* line 687, scss/style.scss */
+/* line 693, scss/style.scss */
 #wrapper figure:nth-child(2n+1) figcaption {
   bottom: 42px;
   left: 0;
   margin-bottom: 40px;
   padding: 0; }
-/* line 693, scss/style.scss */
+/* line 699, scss/style.scss */
 #wrapper figure:nth-child(2n) figcaption {
   top: 0;
   right: 0; }
 
-/* line 700, scss/style.scss */
+/* line 704, scss/style.scss */
+progress {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 30px; }
+
+/* line 709, scss/style.scss */
+progress::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; }
+
+/* line 715, scss/style.scss */
+progress::-webkit-progress-value {
+  background-color: #39ad39;
+  box-shadow: 0px -10px 20px rgba(255, 255, 255, 0.25) inset; }
+
+/* line 720, scss/style.scss */
+.cube dt {
+  margin: 10px; }
+/* line 723, scss/style.scss */
+.cube dd {
+  margin: 10px; }
+/* line 726, scss/style.scss */
+.cube dl {
+  margin-left: 20px;
+  width: 170px;
+  display: inline-block; }
+/* line 731, scss/style.scss */
+.cube dl + dl {
+  margin-left: 10px; }
+
+/* line 737, scss/style.scss */
 #wrapper figcaption {
   position: absolute;
   max-height: 420px;
@@ -817,7 +848,7 @@ section#wrapper {
   padding: 0px 0px;
   width: 25%;
   margin: 40px; }
-/* line 709, scss/style.scss */
+/* line 746, scss/style.scss */
 #wrapper figcaption > h3 {
   border: none;
   padding: 10px;
@@ -826,16 +857,16 @@ section#wrapper {
   font-family: Open, Helvetica, Arial, "sans-serif";
   font-weight: bold;
   font-size: 14px; }
-/* line 718, scss/style.scss */
+/* line 755, scss/style.scss */
 #wrapper figcaption p {
   padding: 10px; }
 
-/* line 724, scss/style.scss */
+/* line 761, scss/style.scss */
 footer {
   background: #484548 url(./img/black_lozenge.png);
   text-align: center;
   min-height: 146px; }
-/* line 730, scss/style.scss */
+/* line 767, scss/style.scss */
 footer a:hover {
   -webkit-text-shadow: 0px 0px 8px #111;
   -moz-text-shadow: 0px 0px 8px #111;
@@ -845,12 +876,12 @@ footer a:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
-/* line 741, scss/style.scss */
+/* line 778, scss/style.scss */
 footer > div.contain > div {
   width: 530px;
   display: inline-block;
   padding: 10px; }
-/* line 748, scss/style.scss */
+/* line 785, scss/style.scss */
 footer .menu {
   font: 18px/1.5 Open, Helvetica, Arial, "sans-serif";
   font-weight: bold;
@@ -880,22 +911,22 @@ footer .menu li:last-child {
 /* line 50, ../../../../../../../Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 footer .menu li.last {
   padding-right: 0; }
-/* line 755, scss/style.scss */
+/* line 792, scss/style.scss */
 footer .menu li:first-child {
   width: 80px; }
-/* line 759, scss/style.scss */
+/* line 796, scss/style.scss */
 footer .menu li {
   width: 110px; }
-/* line 761, scss/style.scss */
+/* line 798, scss/style.scss */
 footer .menu li a {
   color: #53c653; }
-/* line 768, scss/style.scss */
+/* line 805, scss/style.scss */
 footer .socio {
   font: 70px/1.5 'Socialico'; }
-/* line 770, scss/style.scss */
+/* line 807, scss/style.scss */
 footer .socio li {
   min-width: 80px; }
-/* line 774, scss/style.scss */
+/* line 811, scss/style.scss */
 footer .socio a {
   display: block;
   color: #bbbbbb;
@@ -909,7 +940,7 @@ footer .socio a {
   -moz-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear; }
-/* line 786, scss/style.scss */
+/* line 823, scss/style.scss */
 footer .socio a:hover {
   color: #2c872c;
   -webkit-text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD;
@@ -917,7 +948,7 @@ footer .socio a:hover {
   -ms-text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD;
   -o-text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD;
   text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD; }
-/* line 797, scss/style.scss */
+/* line 834, scss/style.scss */
 footer .socio ul {
   margin: 0;
   padding: 0;
@@ -944,7 +975,7 @@ footer .socio ul li:last-child {
 /* line 50, ../../../../../../../Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 footer .socio ul li.last {
   padding-right: 0; }
-/* line 802, scss/style.scss */
+/* line 839, scss/style.scss */
 footer p {
   position: absolute;
   bottom: 0px;

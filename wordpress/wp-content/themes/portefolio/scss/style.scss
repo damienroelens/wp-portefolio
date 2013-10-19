@@ -22,7 +22,7 @@ $size: 400px; //taille du cube page à propos
 @font-face {font-family: 'Lane';src: url('./css/webfonts/LANENAR_.ttf') format('truetype');}
 @font-face {font-family: 'Open';src: url('./css/webfonts/OpenSans-Bold.ttf') format('truetype'); font-weight:bold;}
 @font-face {font-family: 'Open sans';src: url('./css/webfonts/OpenSans-Regular.ttf') format('truetype');}
-@font-face {font-family: 'Socialico';src: url('./css/webfonts/Socialico.ttf') format('truetype');}
+@font-face {font-family: 'Socialico';src: url('./css/webfonts/Socialico.ttf') format('truetype'), url('./css/webfonts/Socialico.woff') format('woff');}
 
 @font-face {
   font-family: 'Lane';src: url("./css/webfonts/LANENAR_.eot");
@@ -557,48 +557,54 @@ section#present{
   transform-style: preserve-3d;
   transition: transform 0.6s linear;
   -webkit-transition: -webkit-transform 0.6s linear;
+    -webkit-transform: rotateY(10deg); 
+  -ms-transform: rotateY(10deg); 
+  transform: rotateY(10deg); 
+
 
 }
 .cube-face {
   width: inherit;
   height: inherit;
   position: absolute;
-  background: red;
-  opacity: 0.8;
+  background: #484548 url(./img/stripe.png);
+  opacity: 1;
+  color:#eeeeee;
+  border:1px solid #39ad39;
 }
 // faces
 .cube-face-front {
-  background: #eee;
+
   -webkit-transform: translate3d(0, 0, $size/2);
   -ms-transform: translate3d(0, 0, $size/2);
   transform: translate3d(0, 0, $size/2);
 }  
 .cube-face-back {
-  background: #eee;
+
   -webkit-transform:rotateY(180deg) translate3d(0, 0, $size/2);
   -ms-transform: rotateY(180deg) translate3d(0, 0, $size/2);
   transform: rotateY(180deg) translate3d(0, 0, $size/2);
 } 
 .cube-face-left {
-  background: #eee;
+
   -webkit-transform: rotateY(-90deg) translate3d(0, 0, $size/2);
   -ms-transform: rotateY(-90deg) translate3d(0, 0, $size/2);
   transform: rotateY(-90deg) translate3d(0, 0, $size/2);
 } 
 .cube-face-right {
-  background: #eee;
+
   -webkit-transform: rotateY(90deg) translate3d(0, 0, $size/2);
   -ms-transform: rotateY(90deg) translate3d(0, 0, $size/2);
   transform: rotateY(90deg) translate3d(0, 0, $size/2);
 } 
 .cube-face-top {
-  background: #eee;
+
   -webkit-transform: rotateX(90deg) translate3d(0, 0, $size/2);
   -ms-transform: rotateX(90deg) translate3d(0, 0, $size/2);
   transform: rotateX(90deg) translate3d(0, 0, $size/2);
 } 
 .cube-face-bottom {
-  background: #eee;
+
   -webkit-transform: rotateX(-90deg) translate3d(0, 0, $size/2);
   -ms-transform: rotateX(-90deg) translate3d(0, 0, $size/2);
   transform: rotateX(-90deg) translate3d(0, 0, $size/2);
@@ -610,24 +616,24 @@ section#present{
   transform: rotateY(180deg); 
 } 
 #radio-left:checked ~ .scene .cube {
-  -webkit-transform: rotateY(90deg); 
-  -ms-transform: rotateY(90deg); 
-  transform: rotateY(90deg); 
+  -webkit-transform: rotateY(100deg);
+  -ms-transform: rotateY(100deg); 
+  transform: rotateY(100deg); 
 } 
 #radio-right:checked ~ .scene .cube {
-  -webkit-transform: rotateY(-90deg); 
-  -ms-transform: rotateY(-90deg); 
-  transform: rotateY(-90deg); 
+  -webkit-transform: rotateY(-100deg); 
+  -ms-transform: rotateY(-100deg); 
+  transform: rotateY(-100deg); 
 }
 #radio-top:checked ~ .scene .cube {
-  -webkit-transform: rotateX(-90deg); 
-  -ms-transform: rotateX(-90deg); 
-  transform: rotateX(-90deg); 
+  -webkit-transform: rotateX(-90deg) rotateZ(10deg); 
+  -ms-transform: rotateX(-90deg) rotateZ(10deg); 
+  transform: rotateX(-90deg) rotateZ(10deg); 
 }  
 #radio-bottom:checked ~ .scene .cube {
-  -webkit-transform: rotateX(90deg); 
-  -ms-transform: rotateX(90deg); 
-  transform: rotateX(90deg); 
+  -webkit-transform: rotateX(90deg) rotateZ(10deg); 
+  -ms-transform: rotateX(90deg) rotateZ(10deg); 
+  transform: rotateX(90deg) rotateZ(10deg); 
 }
 
 .comp {
@@ -693,6 +699,37 @@ section#wrapper{
 	&:nth-child(2n) figcaption{
 			top:0;
 			right:0;
+	}
+}
+progress{
+	-webkit-appearance: none;
+   appearance: none;
+	height:30px;
+}
+progress::-webkit-progress-bar {
+  background-color: #eee;
+
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress::-webkit-progress-value{
+	background-color: #39ad39;
+	box-shadow: 0px -10px 20px rgba(255, 255, 255, 0.25) inset;
+}
+.cube {
+	& dt{
+		margin:10px;
+	}
+	& dd{
+		margin:10px;
+	}
+	& dl{
+		margin-left:20px;
+		width:170px;
+		display: inline-block;
+	}
+	& dl+dl{
+		margin-left:10px;
 	}
 }
 

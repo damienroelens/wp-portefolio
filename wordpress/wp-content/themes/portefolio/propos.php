@@ -32,7 +32,29 @@ Template name:Propos
 				<label for="radio-bottom"><?php echo $cent['label'] ?></label>   
 				<div class="scene">
 				  <div class="cube">
-				      <div class="cube-face  cube-face-front"><h4><?php echo $comp['label'] ?></h4><p><?php echo $comp['value'] ?></p></div>
+				      <div class="cube-face  cube-face-front">
+				      	<h4><?php echo $comp['label'] ?></h4>
+				      	<dl>
+				      		<dt>HTML 5</dt>
+				      		<dd><progress max="100" value="90"></progress></dd>
+				      		<dt>CSS 3</dt>
+				      		<dd><progress max="100" value="85"></progress></dd>
+				      		<dt>Javascript</dt>
+				      		<dd><progress max="100" value="85"></progress></dd>
+				      		<dt>PHP</dt>
+				      		<dd><progress max="100" value="70"></progress></dd>
+				      	</dl>
+				      	<dl>
+				      		<dt>JQuery</dt>
+				      		<dd><progress max="100" value="45"></progress></dd>
+				      		<dt>Photoshop</dt>
+				      		<dd><progress max="100" value="65"></progress></dd>
+				      		<dt>Illustrator</dt>
+				      		<dd><progress max="100" value="75"></progress></dd>
+				      		<dt>InDesign</dt>
+				      		<dd><progress max="100" value="65"></progress></dd>
+				      	</dl>
+				      </div>
 				      <div class="cube-face  cube-face-back"></div>
 				      <div class="cube-face  cube-face-left"><h4><?php echo $expe['label'] ?></h4><p><?php echo $expe['value'] ?></p></div>
 				      <div class="cube-face  cube-face-right"><h4><?php echo $form['label'] ?></h4><p><?php echo $form['value'] ?></p></div>

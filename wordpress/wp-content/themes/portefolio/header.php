@@ -4,6 +4,10 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<title><?php bloginfo( 'name' ) ?></title>
 	<link rel="stylesheet" href="<?php echo(get_stylesheet_uri()); ?>">
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
+	<!--[if IE]>
+    	<link rel="stylesheet" href="<?php bloginfo(template_url); ?>/css/styles-ie.css" media="screen">
+	<![endif]-->
 	<script async type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modernizr.js"></script>
 </head>
 <body>

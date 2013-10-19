@@ -19,6 +19,30 @@
 			display: 'block'
 	});
 
+
+	
+	$('#radio-front+label').click(function(){setTimeout(animBar,0)});
+
+	var animBar = function(){$('progress').each(function(){
+    var interval = 1, //How much to increase the progressbar per frame
+        updatesPerSecond = 1000/100, //Set the nr of updates per second (fps)
+        progress =  $(this),
+        progressMax = progress.val();
+        progress.val(0);
+    var animator = function(){
+            progress.val(progress.val()+interval);
+            
+	            if ( progress.val()+interval < progressMax){
+	               setTimeout(animator, updatesPerSecond);
+	            } else { 
+	                progress.val(progressMax);
+	            }
+
+        }
+    setTimeout(animator, updatesPerSecond);
+	})};
+	animBar();
+
 	var trombinext = function () {
 		var $current, $next;
 		( $current = $trombiPhotos.filter(":visible") ).delay(iTrombiDelay).fadeOut( function(){

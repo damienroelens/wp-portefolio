@@ -8,12 +8,15 @@
   top:0;
   right:0;
 }
-.comp .cube {
+.comp>.scene>.cube {
   position: static;
   -webkit-transform-style: none;
   transform-style: none;
   transition: none;
   -webkit-transition: none;
+    -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
 }
 .cube-face{
     opacity: 1;
@@ -25,42 +28,42 @@
 }
 // faces
 .cube-face-front {
-  background: #eee;
+
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
   z-index:2;
 }  
 .cube-face-back {
-  background: #eee;
+
   -webkit-transform:none;
   -ms-transform: none;
   transform: none;
   z-index:-1000;
 } 
 .cube-face-left {
-  background: #eee;
+
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
   z-index:-3;
 } 
 .cube-face-right {
-  background: #eee;
+
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
   z-index:-4;
 } 
 .cube-face-top {
-  background: #eee;
+
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
   z-index:-5;
 } 
 .cube-face-bottom {
-  background: #eee;
+
   -webkit-transform: none;
   -ms-transform: none;
   transform: none;
