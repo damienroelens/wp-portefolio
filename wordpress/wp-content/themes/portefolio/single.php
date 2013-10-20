@@ -13,7 +13,7 @@
 					<li><?php _e('Type de projet : ') ?><?php 
 						$category = get_the_category();
 						foreach ($category as $cat) {
-							echo '<a href="'.get_category_link($cat->term_id ).'"><span class="icons-sprite '.$cat->description.'">'.$cat->cat_name.'</span></a>';
+							echo '<a href="'.get_category_link($cat->term_id ).'"><span class="icons-sprite '.$cat->description.'">'.$cat->cat_name.'</span></a> ';
 						} ?></li>
 					<li><?php _e('Date : ') ?><a href="<?php echo EH_get_post_type_date_link('projets',get_the_time('Y')); ?>"><?php the_time('Y') ?></a></li>
 					<li><?php _e('Technologies : '); the_tags('',' ') ?></li>

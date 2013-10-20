@@ -30,6 +30,7 @@ Template Name:Contact
 			</div>
 			<form action="">
 				<fieldset>
+					<legend>Me contacter</legend>
 					<label for="nam">Nom : </label>
 					<input type="text" id="nam">
 					<label for="pnam">Prénom : </label>
@@ -39,7 +40,7 @@ Template Name:Contact
 					<label for="txta">Message : </label>
 					<textarea name="messa" id="txta" cols="30" rows="10"></textarea>
 					<input type="button" value="Envoyer">
-					<legend>Me contacter</legend>
+
 				</fieldset>
 			</form>
 		</div>

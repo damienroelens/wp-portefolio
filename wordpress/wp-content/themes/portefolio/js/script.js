@@ -21,11 +21,11 @@
 
 
 	
-	$('#radio-front+label').click(function(){setTimeout(animBar,0)});
+	$('#radio-front+label,#radio-top+label').click(function(){animBar()});
 
 	var animBar = function(){$('progress').each(function(){
-    var interval = 1, //How much to increase the progressbar per frame
-        updatesPerSecond = 1000/100, //Set the nr of updates per second (fps)
+    var interval = 2, //How much to increase the progressbar per frame
+        updatesPerSecond = 10, //Set the nr of updates per second (fps)
         progress =  $(this),
         progressMax = progress.val();
         progress.val(0);

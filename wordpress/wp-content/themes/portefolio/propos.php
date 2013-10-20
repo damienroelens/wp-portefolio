@@ -37,29 +37,61 @@ Template name:Propos
 				      	<dl>
 				      		<dt>HTML 5</dt>
 				      		<dd><progress max="100" value="90"></progress></dd>
-				      		<dt>CSS 3</dt>
-				      		<dd><progress max="100" value="85"></progress></dd>
+				      		<dt>Photoshop</dt>
+				      		<dd><progress max="100" value="75"></progress></dd>
 				      		<dt>Javascript</dt>
 				      		<dd><progress max="100" value="85"></progress></dd>
 				      		<dt>PHP</dt>
 				      		<dd><progress max="100" value="70"></progress></dd>
 				      	</dl>
 				      	<dl>
-				      		<dt>JQuery</dt>
-				      		<dd><progress max="100" value="45"></progress></dd>
-				      		<dt>Photoshop</dt>
-				      		<dd><progress max="100" value="65"></progress></dd>
+				      		<dt>CSS3</dt>
+				      		<dd><progress max="100" value="85"></progress></dd>
 				      		<dt>Illustrator</dt>
-				      		<dd><progress max="100" value="75"></progress></dd>
-				      		<dt>InDesign</dt>
+				      		<dd><progress max="100" value="85"></progress></dd>
+				      		<dt>JQuery</dt>
+				      		<dd><progress max="100" value="60"></progress></dd>
+				      		<dt>MySQL</dt>
 				      		<dd><progress max="100" value="65"></progress></dd>
 				      	</dl>
+				      	<p>CMS : Spip et Wordpress</p>
 				      </div>
 				      <div class="cube-face  cube-face-back"></div>
-				      <div class="cube-face  cube-face-left"><h4><?php echo $expe['label'] ?></h4><p><?php echo $expe['value'] ?></p></div>
-				      <div class="cube-face  cube-face-right"><h4><?php echo $form['label'] ?></h4><p><?php echo $form['value'] ?></p></div>
-				      <div class="cube-face  cube-face-top"><h4><?php echo $lang['label'] ?></h4><p><?php echo $lang['value'] ?></p></div>
-				      <div class="cube-face  cube-face-bottom"><h4><?php echo $cent['label'] ?></h4><p><?php echo $cent['value'] ?></p></div>
+				      <div class="cube-face  cube-face-left">
+				      	<h4><?php echo $expe['label'] ?></h4>
+				      	  <ul>
+					      	<li>Job étudiant chez Dexia département Relation client en juillet 2010 <span>Travail en équipe, Contact avec le client</span></li>
+					      	<li>Divers petit boulots dans le domaine de la construction 2010-2013 <span>Travail en équipe, Savoir se surpasser</span></li>
+					      	<li>Stage bénévole avec Altéo MRB juillet 2013 <span>Esprit de groupe, prise d'initiative, contact et prise en charge de personnes en situation d'handicap</span></li>
+					      	<li>Divers projets de conception de site web 2010-2013 <span>Relation et accompagnement du client, prise en charge de projet complet</span></li>
+					      </ul>
+					  </div>
+				      <div class="cube-face  cube-face-right"><h4><?php echo $form['label'] ?></h4>
+				      	<ul>
+				      	  <li>Secondaire supérieures en informatique à ECCSA <span>2007-2009</span></li>
+					      <li>Formation à l'écoute et à l'esprit d'équipe <span>juillet 2013</span></li>
+					      <li>Bachelier en Infographie à la Haute Ecole de la Province de liège <span>2009-2014</span></li>
+						</ul>
+					  </div>
+				      <div class="cube-face  cube-face-top"><h4><?php echo $lang['label'] ?></h4>
+						<dl>
+				      		<dt>Français</dt>
+				      		<dd><progress max="100" value="100"></progress></dd>
+				      		<dt>Anglais</dt>
+				      		<dd><progress max="100" value="85"></progress></dd>
+				      		<dt>Neerlandais</dt>
+				      		<dd><progress max="100" value="55"></progress></dd>
+				      	</dl>
+				      </div>
+				      <div class="cube-face  cube-face-bottom"><h4><?php echo $cent['label'] ?></h4>
+							<ul>
+								<li>Musique </li>
+								<li>Sport </li>
+								<li>Technologies  </li>
+								<li>Art </li>
+								<li>Jeux vidéo </li>
+							</ul>
+				      </div>
 				   </div>
 				</div>
 			</div>

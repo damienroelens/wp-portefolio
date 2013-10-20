@@ -42,7 +42,7 @@ body{
 }
 
 header{
-	background: #111 url(./img/black_lozenge.png);
+	background: #111 url(./img/dark_wood.png);
 }
 div.contain{
 	width:1200px;
@@ -97,7 +97,7 @@ p{
 }
 
 nav{
-	background: #484548 url(./img/stripe.png);
+	background: #484548 url(./img/px.png);
 	font: 16px/1.5 $fontStackNav ;
 	font-weight: bold;
 
@@ -180,7 +180,7 @@ section{
 
 	& h3{
 		border-bottom:1px solid #39AD39;
-		width:500px;
+		width:600px;
 		margin:0px 0px 30px;
 		text-transform: uppercase;
 		padding-top:0;
@@ -291,14 +291,14 @@ aside{
 	}
 }
 section.blacky{
-	background: #282528 url(./img/black_lozenge.png);
+	background: #282528 url(./img/dark_wood.png);
 	color:#eee;
 	padding-bottom:40px;
 	padding-top:40px;
 }
 section#present{
 	
-	background: #282528 url(./img/black_lozenge.png);
+	background: #282528 url(./img/dark_wood.png);
 	color:#eee;
 	padding-bottom:40px;
 	padding-top:40px;
@@ -356,9 +356,36 @@ section#present{
 		display: inline-block;
 		vertical-align: top;
 		margin-left:80px;
+		max-width: 660px;
+		
+	}
+	& h4{
+		margin-top:30px;
+		display:inline-block;
+	}
+	& .trava{
+		margin:20px 0px;
+		padding:20px;
+		padding-left: 40px;
+		border-radius: 5px;
+		padding-bottom: 40px;
+	}
+	& .trava:nth-child(2n){
+		background: url(./img/binding_light.png);
+	}
+	& .trava:nth-child(2n+1){
+		background: url(./img/binding_dark.png);
+		color:#eee;
+		& ul>li:nth-child(3n) a{
+		background-color: #eee;
+		border-radius: 10px;
+		padding:8px;
+		padding-top:3px;
+		padding-bottom:5px;
+	}
 	}
 	
-	& ul>li:last-child a{
+	& ul>li:nth-child(3n) a{
 		background-color: #111;
 		border-radius: 10px;
 		padding:8px;
@@ -368,7 +395,7 @@ section#present{
 
 	& ul li{
 		font-size:20px;
-		line-height: 3;
+		line-height: 2;
 		
 		& span.icons-sprite{
 			padding-left: 25px;
@@ -378,6 +405,12 @@ section#present{
 			font-weight: bold;
 			font-size:16px;
 		}
+		& p{
+			font-family: $fontStackText;
+			font-size:14px;
+			display: inline;
+		}
+
 	}
 }
 
@@ -397,7 +430,7 @@ section#present{
 	& .info, & form{
 		width:43%;
 		display:inline-block;
-		background-color: #eee;
+		background-color: #eeedee;
 		border-radius:5px;
 		padding:20px;
 	}
@@ -514,7 +547,7 @@ section#present{
 	    position: absolute;
 	    top:16px;  
 	    left: 16px;  
-	    bottombottom: 1px;  
+	    bottom: 1px;  
 	    background-color: #aaa;  
 	    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);  
 	} 
@@ -567,7 +600,7 @@ section#present{
   width: inherit;
   height: inherit;
   position: absolute;
-  background: #484548 url(./img/stripe.png);
+  background: #484548 url(./img/dark_wood.png);
   opacity: 1;
   color:#eeeeee;
   border:1px solid #39ad39;
@@ -636,6 +669,7 @@ section#present{
   transform: rotateX(90deg) rotateZ(10deg); 
 }
 
+
 .comp {
 	min-height:$size;
 
@@ -703,10 +737,11 @@ section#wrapper{
 }
 progress{
 	-webkit-appearance: none;
+	-moz-appearance: none;
    appearance: none;
-	height:30px;
+	height:25px;
 }
-progress::-webkit-progress-bar {
+progress::-webkit-progress-bar, {
   background-color: #eee;
 
   border-radius: 2px;
@@ -716,12 +751,17 @@ progress::-webkit-progress-value{
 	background-color: #39ad39;
 	box-shadow: 0px -10px 20px rgba(255, 255, 255, 0.25) inset;
 }
+progress::-moz-progress-bar{
+	background-color: #39ad39;
+	box-shadow: 0px -10px 20px rgba(255, 255, 255, 0.25) inset;
+}
 .cube {
 	& dt{
 		margin:10px;
 	}
 	& dd{
 		margin:10px;
+
 	}
 	& dl{
 		margin-left:20px;
@@ -730,6 +770,26 @@ progress::-webkit-progress-value{
 	}
 	& dl+dl{
 		margin-left:10px;
+	}
+	& p{
+		padding-top:10px;
+	}
+	ul li{
+		padding:15px;
+		padding-bottom:10px;
+	}
+	ul li>span{
+		display:block;
+		text-align:right;
+		color:#39AD39;
+		font-size: 14px;
+		font-style: italic;
+	}
+	& .cube-face-top dl{
+		width:360px;
+		& progress{
+			width:320px;
+		}
 	}
 }
 
@@ -751,6 +811,7 @@ progress::-webkit-progress-value{
 		font-family: $fontStackNav;
 		font-weight: bold;
 		font-size: 14px;
+		width:100%;
 	}
 	& p{
 		padding:10px;
@@ -760,7 +821,7 @@ progress::-webkit-progress-value{
 
  footer{
 
-	background: #484548 url(./img/black_lozenge.png);
+	background: #484548 url(./img/dark_wood.png);
 	text-align: center;
 	min-height: 146px;
 
