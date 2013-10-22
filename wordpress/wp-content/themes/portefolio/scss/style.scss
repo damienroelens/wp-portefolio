@@ -287,6 +287,9 @@ aside{
 		height: 200px;
 		margin-left:20px;
 	}
+	& img:hover{
+		cursor:pointer;
+	}
 	& div.contain{
 		min-height: 284px;
 	}
@@ -421,6 +424,9 @@ section#present{
 }
 .contac{
 	margin-top:40px;
+	& div.contain{
+		min-height:500px;
+	}
 	& .info, & form{
 		width:43%;
 		display:inline-block;
@@ -503,13 +509,13 @@ section#present{
 				width:20%;
 				vertical-align: top;
 			}
-			& input[type=button]{
+			& input[type=submit]{
 				width:96%;
 				background-color: #39ad39;
 				color:#eee;
 				height:40px;
 			}
-			& input[type=button]:hover{
+			& input[type=submit]:hover{
 				background-color: darken(#39AD39,20%);
 				cursor:pointer;
 			}
@@ -519,6 +525,22 @@ section#present{
 		}
 	}
 }
+
+.contac>div.contain>p+a{
+	width:96%;
+	background-color: #39ad39;
+	display:block;
+	color:#eee;
+	padding:20px;
+	margin-top:450px;
+	text-align: center;
+	border:1px solid #CCC;
+}
+.contac>div.contain>p+a:hover{
+	background-color: darken(#39AD39,20%);
+	cursor:pointer;
+}
+
 
 .propos.cont-up{
 	margin-top: 80px;

@@ -1,0 +1,720 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"desc",
+				"description"
+			],
+			[
+				"current",
+				"currentLink"
+			],
+			[
+				"hist",
+				"historyHasChanged"
+			],
+			[
+				"histo",
+				"history"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"z-",
+				"z-index"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"get_the",
+				"get_the_category"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"it",
+				"italic"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"set",
+				"setTimeout  (function)"
+			],
+			[
+				"progress",
+				"progressMax"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"the_ti",
+				"the_title"
+			],
+			[
+				"template",
+				"template_url"
+			],
+			[
+				"vertical",
+				"vertical-align"
+			],
+			[
+				"black",
+				"black_lozenge"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"the",
+				"the_tags"
+			],
+			[
+				"width",
+				"widthEcran"
+			],
+			[
+				"cat_",
+				"cat_name"
+			],
+			[
+				"the_",
+				"the_time"
+			],
+			[
+				"arc",
+				"arc_year"
+			],
+			[
+				"get_categor",
+				"get_the_category"
+			],
+			[
+				"list_",
+				"wp_list_pages"
+			],
+			[
+				"list",
+				"list_cats"
+			],
+			[
+				"rotat",
+				"rotateX"
+			],
+			[
+				"wa",
+				"w-a	width: auto;"
+			],
+			[
+				"transform-or",
+				"-webkit-transform-origin:   (property)"
+			],
+			[
+				"margintop",
+				"margin-top"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"Op",
+				"OpenSans-Regular"
+			],
+			[
+				"39",
+				"39AD39"
+			],
+			[
+				"vertic",
+				"vertical-align"
+			],
+			[
+				"webkit-tra",
+				"-webkit-transition:   (property)"
+			],
+			[
+				"webtr",
+				"-webkit-transform:   (property)"
+			],
+			[
+				"wektr",
+				"-webkit-transform:   (property)"
+			],
+			[
+				"webkit-trans",
+				"-webkit-transform-style:   (property)"
+			],
+			[
+				"lineh",
+				"line-height"
+			],
+			[
+				"pan",
+				"panTo"
+			],
+			[
+				"aRe",
+				"aResults"
+			],
+			[
+				"gM",
+				"gMarker"
+			],
+			[
+				"aR",
+				"aResults"
+			],
+			[
+				"Geco",
+				"GeocoderStatus"
+			],
+			[
+				"show",
+				"showMeMyPlace"
+			],
+			[
+				"up",
+				"updateGoogleMapPosition"
+			],
+			[
+				"gene",
+				"generateGoogleMap"
+			],
+			[
+				"getPosi",
+				"getPositionError"
+			],
+			[
+				"getposi",
+				"getPositionSuccess"
+			],
+			[
+				"display",
+				"display:block"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"cont",
+				"content"
+			],
+			[
+				"fontstack",
+				"fontStackNav"
+			],
+			[
+				"backgroun",
+				"background-position"
+			],
+			[
+				"backgro",
+				"background-position"
+			],
+			[
+				"back",
+				"background-size"
+			],
+			[
+				"background",
+				"background-size"
+			],
+			[
+				"fi",
+				"first-child  (pseudo-class)"
+			],
+			[
+				"font-s",
+				"font-style"
+			],
+			[
+				"whi",
+				"white-space"
+			],
+			[
+				"fig",
+				"figcaption"
+			],
+			[
+				"verti",
+				"vertical-align"
+			],
+			[
+				"border-ra",
+				"border-radius"
+			],
+			[
+				"fontsta",
+				"fontStackText"
+			],
+			[
+				"line",
+				"line-height"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"font-",
+				"font-size:   (property)"
+			],
+			[
+				"por",
+				"portefolio_widgets_init"
+			],
+			[
+				"fo",
+				"fontTitre"
+			],
+			[
+				"trombi",
+				"trombiPhotos"
+			],
+			[
+				"over",
+				"overlayOpacity"
+			],
+			[
+				"zI",
+				"zIndexBase"
+			],
+			[
+				"css",
+				"cssPrefix"
+			],
+			[
+				"load",
+				"loadImage"
+			],
+			[
+				"bord",
+				"border-bottom-right-radius"
+			],
+			[
+				"border-bott",
+				"border-bottom-right-radius"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"html",
+				"htmlWidth"
+			],
+			[
+				"borderra",
+				"border-top-right-radius"
+			],
+			[
+				"bdrs",
+				"border-radius"
+			],
+			[
+				"bac",
+				"background-repeat"
+			],
+			[
+				"Oliver",
+				"Oliver-Xperiences"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"backgrou",
+				"background-color"
+			],
+			[
+				"list-sty",
+				"list-style-type"
+			],
+			[
+				"te",
+				"text-indent"
+			],
+			[
+				"Corb",
+				"CorbelBold"
+			],
+			[
+				"border-top",
+				"border-top-left-radius"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"Co",
+				"CorbelBold"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"bor",
+				"border-bottom-left-radius"
+			],
+			[
+				"border-bo",
+				"border-bottom-right-radius"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 173.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"channel",
+				"Package Control: Add Channel"
+			],
+			[
+				"pack",
+				"Package Control: Add Channel"
+			],
+			[
+				"packa",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 153.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/style.css",
+		"/C/Program Files (x86)/wamp/www/history/.htaccess",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/js/min/script.min.js",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/functions.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/mail.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/contact.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/propos.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/archive.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/single.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/category.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/tag.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/date.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/index.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/config.rb",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/scss/style.scss",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/header.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/footer.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/js/script.js",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/css/styles-ie.css",
+		"/C/Program Files (x86)/wamp/www/history/js/script.js",
+		"/C/Program Files (x86)/wamp/www/history/index.html",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/js/slimbox2.js",
+		"/C/Users/vdb040/Documents/Oliver-Xperiences/site/html/contact.html",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/js/jquery.js",
+		"/C/Users/vdb040/Desktop/exisa1.html",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/js/script.js",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/index.html",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/css/style.css",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/css/style.css",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/css/style.scss",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/propos.html",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/contact.html",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/travaux.html",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/index.html",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/js/jquery.js",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/css/styles-ie.css",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/config.rb",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/page.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/404.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/comments.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/page-blog.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/sidebar-sidebar-1.php",
+		"/C/Program Files (x86)/wamp/www/wp-portefolio/wordpress/wp-content/themes/portefolio/blog.php",
+		"/C/Users/vdb040/Downloads/transformie-master/transformie-master/transformie.js",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/css/styleie.css",
+		"/C/Program Files (x86)/wamp/www/geolocation/js/script.js",
+		"/C/Users/vdb040/Desktop/Cours Compass/scss/screen.scss",
+		"/C/Users/vdb040/Desktop/Cours Sass/scss/_mixin.scss",
+		"/C/Users/vdb040/Desktop/Cours Sass/scss/screen.scss",
+		"/C/Users/vdb040/Desktop/Cours Sass/scss/boxes.scss",
+		"/C/Program Files (x86)/wamp/www/Porte-folio/Template - Portefolio/css/config.rb",
+		"/C/Users/vdb040/Documents/GitHub/Porte-folio/Template - Portefolio/css/style.css",
+		"/C/Users/vdb040/Documents/GitHub/Porte-folio/Template - Portefolio/js/script.js",
+		"/C/Users/vdb040/Documents/GitHub/Porte-folio/Template - Portefolio/css/style.scss",
+		"/C/Users/vdb040/Documents/GitHub/Porte-folio/Template - Portefolio/index.html",
+		"/C/Users/vdb040/Documents/GitHub/Porte-folio/Template - Portefolio/.gitignore",
+		"/C/Users/vdb040/Desktop/Template - Portefolio/js/script.js",
+		"/C/Users/vdb040/Desktop/Template - Portefolio/index.html",
+		"/C/Users/vdb040/Desktop/Template - Portefolio/css/style.css",
+		"/C/Users/vdb040/Desktop/Projects/octocat.txt",
+		"/C/Users/vdb040/Desktop/Template - Portefolio/css/style.scss",
+		"/C/Program Files (x86)/wamp/www/jquery/js/script.js",
+		"/C/Users/vdb040/Desktop/RIA/jquery/js/script.js",
+		"/C/Users/vdb040/Downloads/MyFontsWebfontsKit/MyFontsWebfontsKit/MyFontsWebfontsKit.css",
+		"/C/Users/vdb040/Desktop/ImmoWeb/refonte/scss/screen.scss",
+		"/C/Users/vdb040/Desktop/Template - Portefolio/config.rb",
+		"/C/Users/vdb040/Desktop/deck.js/themes/style/neon.scss",
+		"/C/Users/vdb040/Desktop/deck.js/boilerplate.html",
+		"/C/Users/vdb040/Desktop/deck.js/core/deck.core.scss",
+		"/C/Program Files (x86)/wamp/www/wordpress-cours1/wp-content/themes/portefolio/style.css",
+		"/C/Program Files (x86)/wamp/www/wordpress-cours1/wp-content/themes/portefolio/header.php",
+		"/C/Program Files (x86)/wamp/www/wordpress-cours1/wp-content/themes/portefolio/footer.php",
+		"/C/Program Files (x86)/wamp/www/wordpress-cours1/wp-content/themes/portefolio/single.php",
+		"/C/Program Files (x86)/wamp/www/wordpress-cours1/wp-content/themes/portefolio/index.php",
+		"/C/Program Files (x86)/wamp/www/wordpress-cours1/wp-content/themes/twentyeleven/comments.php",
+		"/C/Users/vdb040/AppData/Roaming/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/C/Program Files (x86)/wamp/www/wordpress-cours1/.htaccess",
+		"/C/Program Files (x86)/wamp/www/wordpress-cours1/wp-config.php",
+		"/C/Users/vdb040/Desktop/ImmoWeb/refonte/css/screen.css",
+		"/C/Users/vdb040/Desktop/ImmoWeb/refonte/index.html",
+		"/C/Users/vdb040/Desktop/RIA/heplbox/heplbox/index.html",
+		"/C/Users/vdb040/Desktop/ImmoWeb/refonte/js/script.js",
+		"/C/Users/vdb040/Desktop/RIA/heplbox/heplbox/js/jquery.heplbox.js",
+		"/C/Program Files (x86)/wamp/www/Oliver-Xperiences/site/index.html",
+		"/C/Users/vdb040/Desktop/RIA/jquery/index.html",
+		"/C/Users/vdb040/Desktop/Cours Sass/scss/_functions.scss",
+		"/C/Users/vdb040/Desktop/Cours Sass/scss/_colors.scss",
+		"/C/Users/vdb040/Desktop/Cours Compass/config.rb",
+		"/C/Users/vdb040/Desktop/Cours Compass/css/screen.css",
+		"/C/Users/vdb040/Desktop/Cours Compass/html/index.html",
+		"/C/Users/vdb040/Desktop/Cours Sass/css/boxes.css",
+		"/C/Users/vdb040/Desktop/Cours Sass/html/page2.html",
+		"/C/Users/vdb040/Desktop/Cours Sass/html/index.html",
+		"/C/Users/vdb040/Desktop/Cours Sass/css/screen.css",
+		"/C/Users/vdb040/Desktop/Cours Sass/scss/boxes.css",
+		"/C/Users/vdb040/Documents/Oliver-Xperiences/site/index.html",
+		"/C/Users/vdb040/Documents/Oliver-Xperiences/site/html/xperiences.html",
+		"/C/Users/vdb040/Documents/Oliver-Xperiences/site/html/partners.html",
+		"/C/Users/vdb040/Documents/Oliver-Xperiences/site/html/mail.php",
+		"/C/Users/vdb040/Documents/Oliver-Xperiences/site/css/css.css",
+		"/C/Users/vdb040/Documents/Oliver-Xperiences/site/js/form.js",
+		"/C/Program Files (x86)/wamp/www/universality/html/mail.php",
+		"/C/Program Files (x86)/wamp/www/universality/js/script1.js",
+		"/C/Program Files (x86)/wamp/www/universality/html/contact.html",
+		"/C/Program Files (x86)/wamp/www/universality/index.html",
+		"/C/Program Files (x86)/wamp/www/universality/js/script.js",
+		"/C/Program Files (x86)/wamp/www/universality/js/jquery-1.7.1.min.js",
+		"/C/Program Files (x86)/wamp/www/universality/js/jquery.slidertron-1.1.js",
+		"/D/minee/MinecraftSP - IP Cracké = pvp.fightcraft.Fr.exe"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"href",
+			"descrip",
+			"wrapper",
+			"Socialico",
+			"socialico",
+			"binding_dark",
+			"carbon_fibre",
+			"propos",
+			"figcaption",
+			"& ul>li:last-child a{\n		background-color: #111;\n		border-radius: 10px;\n		padding:8px;\n		padding-top:3px;\n		padding-bottom:5px;\n	}",
+			"nth",
+			"black",
+			"$fontStackNav",
+			"work",
+			".contain",
+			"figcaption",
+			"margin-bottom",
+			"figcap",
+			"line-hei",
+			"line 80",
+			"normal",
+			"nav",
+			"20px",
+			"line 68",
+			"line 42",
+			"();\n",
+			"line 48",
+			"register_nav_menu",
+			"after_setup",
+			"block",
+			";\n",
+			"important",
+			"#info",
+			"<label for=\"Prenom\">Votre nom :</label>\n					<input name=\"Prenom\" type=\"text\" id=\"Prenom\" size=\"60\" maxlength=\"40\" value=\"Nom\" tabindex=\"2\"/>",
+			"555",
+			"footer",
+			"94B1D9",
+			"padding-bottom:5px;",
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		},
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.725944404846,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 124.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 197.0,
+	"status_bar_visible": true
+}

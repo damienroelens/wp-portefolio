@@ -55,7 +55,7 @@
 				),
 			'public' => true,
 			'has_archive' => true,
-			'rewrite' => array('slug' => '/'),
+			'rewrite' => array('slug' => ''),
 			'menu_icon' => get_bloginfo(template_url).'/img/menu/menu2.png',
 			'supports' => array('title','editor','author','custom-fields','excerpt','thumbnail')
 			)

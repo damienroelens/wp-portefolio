@@ -3,6 +3,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<title><?php bloginfo( 'name' ) ?></title>
+	<link rel="shortcut icon" type="image/png" href="<?php bloginfo('template_url'); ?>/img/favicon.png" />
 	<link rel="stylesheet" href="<?php echo(get_stylesheet_uri()); ?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9">
 	<!--[if IE]>
@@ -26,11 +27,22 @@
 				<?php if($the_query->have_posts()): ?>
 					<?php while($the_query->have_posts()) : $the_query->the_post(); ?>
 
-							<li><a href="<?php if(is_archive()){
+							<li><a href="<?php 
+								if($post->post_name=='projets'){	
+									if(is_archive()){} else{
 								echo(site_url());echo('/'.$post->post_name);
-							} else {
-								the_field('lien_menu_navigation');
-							} ?>"><span class="icon-sprite <?php the_field('classe_icone')?>"><?php the_title(); ?></span></a></li>
+								}
+								} else {
+									if($post->post_name=='a-propos'){
+										echo(get_page_link(13));
+										} else {
+											if($post->post_name=='contact' )
+											{
+											echo(get_page_link(15));
+											}
+										}
+								}
+							 ?>"><span class="icon-sprite <?php the_field('classe_icone')?>"><?php the_title(); ?></span></a></li>
 							
 						
 						<?php endwhile; ?>

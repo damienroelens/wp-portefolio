@@ -28,18 +28,18 @@ Template Name:Contact
 					<div class="tel icons-sprite"><?php the_field('telephone') ?></div>
 				</div>
 			</div>
-			<form action="">
+			<form action="/mail" method="post">
 				<fieldset>
 					<legend>Me contacter</legend>
 					<label for="nam">Nom : </label>
-					<input type="text" id="nam">
+					<input type="text" id="nam" name="Nom">
 					<label for="pnam">Prénom : </label>
-					<input type="text" id="pnam">
+					<input type="text" id="pnam" name="Prenom">
 					<label for="mail">E-mail : </label>
-					<input type="email" id="mail">
+					<input type="email" id="mail" name="Email">
 					<label for="txta">Message : </label>
-					<textarea name="messa" id="txta" cols="30" rows="10"></textarea>
-					<input type="button" value="Envoyer">
+					<textarea name="Message" id="txta" cols="30" rows="10"></textarea>
+					<input type="submit" value="Envoyer">
 
 				</fieldset>
 			</form>

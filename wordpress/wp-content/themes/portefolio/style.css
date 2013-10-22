@@ -400,10 +400,13 @@ aside a:hover {
   height: 200px;
   margin-left: 20px; }
 /* line 290, scss/style.scss */
+#description img:hover {
+  cursor: pointer; }
+/* line 293, scss/style.scss */
 #description div.contain {
   min-height: 284px; }
 
-/* line 294, scss/style.scss */
+/* line 297, scss/style.scss */
 section.blacky {
   background: #282528 url(./img/dark_wood.png);
   box-shadow: 0px -2px 4px 1px #555, 0px 2px 4px 1px #555;
@@ -411,14 +414,14 @@ section.blacky {
   padding-bottom: 40px;
   padding-top: 40px; }
 
-/* line 301, scss/style.scss */
+/* line 304, scss/style.scss */
 section#present {
   box-shadow: 0px -2px 4px 1px #555, 0px 2px 4px 1px #555;
   background: #282528 url(./img/dark_wood.png);
   color: #eee;
   padding-bottom: 40px;
   padding-top: 40px; }
-/* line 308, scss/style.scss */
+/* line 311, scss/style.scss */
 section#present div.presimg {
   display: inline-block;
   opacity: 0.8;
@@ -428,14 +431,14 @@ section#present div.presimg {
   background-color: #111;
   border-radius: 25px;
   border: 5px solid #39AD39; }
-/* line 317, scss/style.scss */
+/* line 320, scss/style.scss */
 section#present div.presimg img {
   padding: 5px;
   border-radius: 25px;
   display: block;
   width: 150px;
   height: 150px; }
-/* line 325, scss/style.scss */
+/* line 328, scss/style.scss */
 section#present p {
   width: 40%;
   display: inline-block;
@@ -444,11 +447,11 @@ section#present p {
   text-align: justify;
   vertical-align: top;
   margin-top: 20px; }
-/* line 334, scss/style.scss */
+/* line 337, scss/style.scss */
 section#present div + p {
   margin-left: 20px;
   margin-right: 0; }
-/* line 339, scss/style.scss */
+/* line 342, scss/style.scss */
 section#present div.trame {
   border-radius: 25px;
   position: absolute;
@@ -459,24 +462,24 @@ section#present div.trame {
   background: url("./img/trame.png");
   z-index: 10; }
 
-/* line 351, scss/style.scss */
+/* line 354, scss/style.scss */
 .worked {
   margin-top: 40px; }
-/* line 353, scss/style.scss */
+/* line 356, scss/style.scss */
 .worked img {
   margin: 20px;
   display: inline-block; }
-/* line 357, scss/style.scss */
+/* line 360, scss/style.scss */
 .worked ul {
   display: inline-block;
   vertical-align: top;
   margin-left: 80px;
   max-width: 660px; }
-/* line 364, scss/style.scss */
+/* line 367, scss/style.scss */
 .worked h4 {
   margin-top: 30px;
   display: inline-block; }
-/* line 368, scss/style.scss */
+/* line 371, scss/style.scss */
 .worked .trava {
   margin: 20px 0px;
   padding: 20px;
@@ -484,36 +487,36 @@ section#present div.trame {
   border-radius: 5px;
   padding-bottom: 40px;
   box-shadow: 0px 0px 2px 2px #CCC; }
-/* line 376, scss/style.scss */
+/* line 379, scss/style.scss */
 .worked .trava:nth-child(2n+1) {
   background: rgba(100, 100, 100, 0.1);
   box-shadow: 0px 0px 2px 2px #AAA; }
-/* line 382, scss/style.scss */
+/* line 385, scss/style.scss */
 .worked ul > li:nth-child(3n) a {
   background-color: #111;
   border-radius: 10px;
   padding: 8px;
   padding-top: 3px;
   padding-bottom: 5px; }
-/* line 390, scss/style.scss */
+/* line 393, scss/style.scss */
 .worked ul li {
   font-size: 20px;
   line-height: 2; }
-/* line 394, scss/style.scss */
+/* line 397, scss/style.scss */
 .worked ul li span.icons-sprite, .worked ul li span.icons-code, .worked ul li span.icons-home, .worked ul li span.icons-mail2, .worked ul li span.icons-mobile, .worked ul li span.icons-pencil, .worked ul li span.icons-profile, .worked ul li span.icons-wordpress {
   padding-left: 25px; }
-/* line 397, scss/style.scss */
+/* line 400, scss/style.scss */
 .worked ul li a {
   font-family: Open, Helvetica, Arial, "sans-serif";
   font-weight: bold;
   font-size: 16px; }
-/* line 402, scss/style.scss */
+/* line 405, scss/style.scss */
 .worked ul li p {
   font-family: Open sans, Helvetica, Arial, "sans-serif";
   font-size: 14px;
   display: inline; }
 
-/* line 411, scss/style.scss */
+/* line 414, scss/style.scss */
 .f-nav {
   z-index: 9999;
   position: fixed;
@@ -521,18 +524,21 @@ section#present div.trame {
   top: 0;
   width: 100%; }
 
-/* line 415, scss/style.scss */
+/* line 418, scss/style.scss */
 .cont-up {
   margin-top: 80px; }
 
-/* line 419, scss/style.scss */
+/* line 422, scss/style.scss */
 .contac.cont-up {
   margin-top: 80px; }
 
-/* line 422, scss/style.scss */
+/* line 425, scss/style.scss */
 .contac {
   margin-top: 40px; }
-/* line 424, scss/style.scss */
+/* line 427, scss/style.scss */
+.contac div.contain {
+  min-height: 500px; }
+/* line 430, scss/style.scss */
 .contac .info, .contac form {
   width: 43%;
   display: inline-block;
@@ -540,28 +546,28 @@ section#present div.trame {
   box-shadow: 0px 0px 2px 2px #CCC;
   border-radius: 5px;
   padding: 20px; }
-/* line 434, scss/style.scss */
+/* line 440, scss/style.scss */
 .contac .info span.icons-sprite, .contac .info span.icons-code, .contac .info span.icons-home, .contac .info span.icons-mail2, .contac .info span.icons-mobile, .contac .info span.icons-pencil, .contac .info span.icons-profile, .contac .info span.icons-wordpress, .contac .info a.icons-sprite, .contac .info a.icons-code, .contac .info a.icons-home, .contac .info a.icons-mail2, .contac .info a.icons-mobile, .contac .info a.icons-pencil, .contac .info a.icons-profile, .contac .info a.icons-wordpress, .contac .info .postal-code, .contac .info .country-name {
   padding-left: 30px;
   line-height: 3; }
-/* line 438, scss/style.scss */
+/* line 444, scss/style.scss */
 .contac .info .postal-code, .contac .info .country-name {
   line-height: 2; }
-/* line 441, scss/style.scss */
+/* line 447, scss/style.scss */
 .contac .info .country-name {
   display: block;
   line-height: 1.5; }
-/* line 445, scss/style.scss */
+/* line 451, scss/style.scss */
 .contac .info div.icons-sprite, .contac .info div.icons-code, .contac .info div.icons-home, .contac .info div.icons-mail2, .contac .info div.icons-mobile, .contac .info div.icons-pencil, .contac .info div.icons-profile, .contac .info div.icons-wordpress {
   padding: 2px 0 4px;
   padding-left: 30px; }
-/* line 449, scss/style.scss */
+/* line 455, scss/style.scss */
 .contac .info div.vcard > div:last-child {
   margin-top: 10px; }
-/* line 452, scss/style.scss */
+/* line 458, scss/style.scss */
 .contac .info div.vcard .fn {
   line-height: 1.5; }
-/* line 455, scss/style.scss */
+/* line 461, scss/style.scss */
 .contac .info div.presimg {
   display: inline-block;
   opacity: 0.8;
@@ -572,13 +578,13 @@ section#present div.trame {
   border-radius: 25px;
   border: 5px solid #39AD39;
   float: right; }
-/* line 466, scss/style.scss */
+/* line 472, scss/style.scss */
 .contac .info img {
   padding: 5px;
   border-radius: 25px;
   width: 200px;
   height: 200px; }
-/* line 472, scss/style.scss */
+/* line 478, scss/style.scss */
 .contac .info div.trame {
   border-radius: 25px;
   position: absolute;
@@ -588,58 +594,74 @@ section#present div.trame {
   width: 100%;
   background: url("./img/trame.png");
   z-index: 10; }
-/* line 484, scss/style.scss */
+/* line 490, scss/style.scss */
 .contac form {
   vertical-align: top;
   margin-left: 5%; }
-/* line 487, scss/style.scss */
+/* line 493, scss/style.scss */
 .contac form fieldset {
   border: 1px solid #ddd;
   padding: 20px; }
-/* line 490, scss/style.scss */
+/* line 496, scss/style.scss */
 .contac form fieldset legend {
   margin-left: 20px; }
-/* line 493, scss/style.scss */
+/* line 499, scss/style.scss */
 .contac form fieldset input, .contac form fieldset label {
   display: inline-block;
   margin: 2%;
   line-height: 2; }
-/* line 498, scss/style.scss */
+/* line 504, scss/style.scss */
 .contac form fieldset input, .contac form fieldset textarea {
   width: 68%; }
-/* line 502, scss/style.scss */
+/* line 508, scss/style.scss */
 .contac form fieldset label {
   width: 20%;
   vertical-align: top; }
-/* line 506, scss/style.scss */
-.contac form fieldset input[type=button] {
+/* line 512, scss/style.scss */
+.contac form fieldset input[type=submit] {
   width: 96%;
   background-color: #39ad39;
   color: #eee;
   height: 40px; }
-/* line 512, scss/style.scss */
-.contac form fieldset input[type=button]:hover {
+/* line 518, scss/style.scss */
+.contac form fieldset input[type=submit]:hover {
   background-color: #206020;
   cursor: pointer; }
-/* line 516, scss/style.scss */
+/* line 522, scss/style.scss */
 .contac form fieldset textarea {
   margin-left: 8px; }
 
-/* line 523, scss/style.scss */
+/* line 529, scss/style.scss */
+.contac > div.contain > p + a {
+  width: 96%;
+  background-color: #39ad39;
+  display: block;
+  color: #eee;
+  padding: 20px;
+  margin-top: 450px;
+  text-align: center;
+  border: 1px solid #CCC; }
+
+/* line 539, scss/style.scss */
+.contac > div.contain > p + a:hover {
+  background-color: #206020;
+  cursor: pointer; }
+
+/* line 545, scss/style.scss */
 .propos.cont-up {
   margin-top: 80px; }
 
-/* line 527, scss/style.scss */
+/* line 549, scss/style.scss */
 .propos {
   margin-top: 40px; }
-/* line 529, scss/style.scss */
+/* line 551, scss/style.scss */
 .propos label {
   padding-left: 50px;
   position: relative; }
-/* line 533, scss/style.scss */
+/* line 555, scss/style.scss */
 .propos input[type=radio] {
   display: none; }
-/* line 536, scss/style.scss */
+/* line 558, scss/style.scss */
 .propos label:before {
   content: "";
   display: inline-block;
@@ -653,7 +675,7 @@ section#present div.trame {
   bottom: 1px;
   background-color: #aaa;
   box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, 0.3), 0px 1px 0px 0px rgba(255, 255, 255, 0.8); }
-/* line 550, scss/style.scss */
+/* line 572, scss/style.scss */
 .propos input[type=radio]:checked + label:before {
   font-family: 'times new roman';
   content: "\2022";
@@ -662,7 +684,7 @@ section#present div.trame {
   text-align: center;
   line-height: 14px; }
 
-/* line 560, scss/style.scss */
+/* line 582, scss/style.scss */
 .scene {
   margin-top: 50px;
   width: 400px;
@@ -672,18 +694,18 @@ section#present div.trame {
   position: absolute;
   top: 0;
   right: 100px; }
-/* line 569, scss/style.scss */
+/* line 591, scss/style.scss */
 .scene h4 {
   padding: 20px;
   border: none;
   margin-bottom: 0px;
   text-rendering: geometricPrecision; }
-/* line 575, scss/style.scss */
+/* line 597, scss/style.scss */
 .scene p {
   padding: 20px;
   text-rendering: geometricPrecision; }
 
-/* line 581, scss/style.scss */
+/* line 603, scss/style.scss */
 .cube {
   position: absolute;
   width: inherit;
@@ -696,7 +718,7 @@ section#present div.trame {
   -ms-transform: rotateY(10deg);
   transform: rotateY(10deg); }
 
-/* line 595, scss/style.scss */
+/* line 617, scss/style.scss */
 .cube-face {
   width: inherit;
   height: inherit;
@@ -706,76 +728,76 @@ section#present div.trame {
   color: #eeeeee;
   border: 1px solid #555; }
 
-/* line 605, scss/style.scss */
+/* line 627, scss/style.scss */
 .cube-face-front {
   -webkit-transform: translate3d(0, 0, 200px);
   -ms-transform: translate3d(0, 0, 200px);
   transform: translate3d(0, 0, 200px); }
 
-/* line 611, scss/style.scss */
+/* line 633, scss/style.scss */
 .cube-face-back {
   -webkit-transform: rotateY(180deg) translate3d(0, 0, 200px);
   -ms-transform: rotateY(180deg) translate3d(0, 0, 200px);
   transform: rotateY(180deg) translate3d(0, 0, 200px); }
 
-/* line 617, scss/style.scss */
+/* line 639, scss/style.scss */
 .cube-face-left {
   -webkit-transform: rotateY(-90deg) translate3d(0, 0, 200px);
   -ms-transform: rotateY(-90deg) translate3d(0, 0, 200px);
   transform: rotateY(-90deg) translate3d(0, 0, 200px); }
 
-/* line 623, scss/style.scss */
+/* line 645, scss/style.scss */
 .cube-face-right {
   -webkit-transform: rotateY(90deg) translate3d(0, 0, 200px);
   -ms-transform: rotateY(90deg) translate3d(0, 0, 200px);
   transform: rotateY(90deg) translate3d(0, 0, 200px); }
 
-/* line 629, scss/style.scss */
+/* line 651, scss/style.scss */
 .cube-face-top {
   -webkit-transform: rotateX(90deg) translate3d(0, 0, 200px);
   -ms-transform: rotateX(90deg) translate3d(0, 0, 200px);
   transform: rotateX(90deg) translate3d(0, 0, 200px); }
 
-/* line 635, scss/style.scss */
+/* line 657, scss/style.scss */
 .cube-face-bottom {
   -webkit-transform: rotateX(-90deg) translate3d(0, 0, 200px);
   -ms-transform: rotateX(-90deg) translate3d(0, 0, 200px);
   transform: rotateX(-90deg) translate3d(0, 0, 200px); }
 
-/* line 642, scss/style.scss */
+/* line 664, scss/style.scss */
 #radio-back:checked ~ .scene .cube {
   -webkit-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
   transform: rotateY(180deg); }
 
-/* line 647, scss/style.scss */
+/* line 669, scss/style.scss */
 #radio-left:checked ~ .scene .cube {
   -webkit-transform: rotateY(100deg);
   -ms-transform: rotateY(100deg);
   transform: rotateY(100deg); }
 
-/* line 652, scss/style.scss */
+/* line 674, scss/style.scss */
 #radio-right:checked ~ .scene .cube {
   -webkit-transform: rotateY(-100deg);
   -ms-transform: rotateY(-100deg);
   transform: rotateY(-100deg); }
 
-/* line 657, scss/style.scss */
+/* line 679, scss/style.scss */
 #radio-top:checked ~ .scene .cube {
   -webkit-transform: rotateX(-90deg) rotateZ(10deg);
   -ms-transform: rotateX(-90deg) rotateZ(10deg);
   transform: rotateX(-90deg) rotateZ(10deg); }
 
-/* line 662, scss/style.scss */
+/* line 684, scss/style.scss */
 #radio-bottom:checked ~ .scene .cube {
   -webkit-transform: rotateX(90deg) rotateZ(10deg);
   -ms-transform: rotateX(90deg) rotateZ(10deg);
   transform: rotateX(90deg) rotateZ(10deg); }
 
-/* line 669, scss/style.scss */
+/* line 691, scss/style.scss */
 .comp {
   min-height: 400px; }
-/* line 672, scss/style.scss */
+/* line 694, scss/style.scss */
 .comp label {
   display: block;
   width: 40%;
@@ -784,13 +806,13 @@ section#present div.trame {
   color: #39AD39;
   font-family: Open, Helvetica, Arial, "sans-serif";
   font-weight: bold; }
-/* line 681, scss/style.scss */
+/* line 703, scss/style.scss */
 .comp input {
   float: left;
   position: relative;
   top: 14px;
   width: 5%; }
-/* line 687, scss/style.scss */
+/* line 709, scss/style.scss */
 .comp label:hover, .comp input:focus + label {
   background: rgba(50, 50, 50, 0.5);
   -webkit-border-radius: 5px;
@@ -803,97 +825,97 @@ section#present div.trame {
   -o-text-shadow: 0px 0px 2px #111;
   text-shadow: 0px 0px 2px #111; }
 
-/* line 701, scss/style.scss */
+/* line 723, scss/style.scss */
 section#wrapper.cont-up {
   margin-top: 80px; }
 
-/* line 705, scss/style.scss */
+/* line 727, scss/style.scss */
 section#wrapper {
   margin-top: 40px; }
 
-/* line 713, scss/style.scss */
+/* line 735, scss/style.scss */
 #wrapper figure {
   position: relative;
   display: inline; }
-/* line 716, scss/style.scss */
+/* line 738, scss/style.scss */
 #wrapper figure img {
   width: 32%;
   height: 32%;
   box-shadow: 0px 0px 3px 2px #AAA; }
-/* line 721, scss/style.scss */
+/* line 743, scss/style.scss */
 #wrapper figure figcaption {
   display: none;
   box-shadow: 2px 2px 2px #333; }
-/* line 726, scss/style.scss */
+/* line 748, scss/style.scss */
 #wrapper figure:nth-child(2n+1) figcaption {
   bottom: 42px;
   left: 0;
   margin-bottom: 40px;
   padding: 0; }
-/* line 732, scss/style.scss */
+/* line 754, scss/style.scss */
 #wrapper figure:nth-child(2n) figcaption {
   top: 0;
   right: 0; }
 
-/* line 737, scss/style.scss */
+/* line 759, scss/style.scss */
 progress {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   height: 25px; }
 
-/* line 743, scss/style.scss */
+/* line 765, scss/style.scss */
 progress::-webkit-progress-bar {
   background-color: #eee;
   border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset; }
 
-/* line 749, scss/style.scss */
+/* line 771, scss/style.scss */
 progress::-webkit-progress-value {
   background-color: #39ad39;
   box-shadow: 0px -10px 20px rgba(255, 255, 255, 0.25) inset; }
 
-/* line 753, scss/style.scss */
+/* line 775, scss/style.scss */
 progress::-moz-progress-bar {
   background-color: #39ad39;
   box-shadow: 0px -10px 20px rgba(255, 255, 255, 0.25) inset; }
 
-/* line 758, scss/style.scss */
+/* line 780, scss/style.scss */
 .cube dt {
   margin: 10px; }
-/* line 761, scss/style.scss */
+/* line 783, scss/style.scss */
 .cube dd {
   margin: 10px; }
-/* line 765, scss/style.scss */
+/* line 787, scss/style.scss */
 .cube dl {
   margin-left: 20px;
   width: 170px;
   display: inline-block; }
-/* line 770, scss/style.scss */
+/* line 792, scss/style.scss */
 .cube dl + dl {
   margin-left: 10px; }
-/* line 773, scss/style.scss */
+/* line 795, scss/style.scss */
 .cube p {
   padding-top: 10px; }
-/* line 776, scss/style.scss */
+/* line 798, scss/style.scss */
 .cube ul li {
   padding: 15px;
   padding-bottom: 10px; }
-/* line 780, scss/style.scss */
+/* line 802, scss/style.scss */
 .cube ul li > span {
   display: block;
   text-align: right;
   color: #39AD39;
   font-size: 14px;
   font-style: italic; }
-/* line 787, scss/style.scss */
+/* line 809, scss/style.scss */
 .cube .cube-face-top dl {
   width: 360px; }
-/* line 789, scss/style.scss */
+/* line 811, scss/style.scss */
 .cube .cube-face-top dl progress {
   width: 320px; }
 
-/* line 796, scss/style.scss */
+/* line 818, scss/style.scss */
 #wrapper figcaption {
   position: absolute;
   max-height: 420px;
@@ -902,7 +924,7 @@ progress::-moz-progress-bar {
   padding: 0px 0px;
   width: 25%;
   margin: 40px; }
-/* line 805, scss/style.scss */
+/* line 827, scss/style.scss */
 #wrapper figcaption > h3 {
   border: none;
   padding: 10px;
@@ -912,17 +934,17 @@ progress::-moz-progress-bar {
   font-weight: bold;
   font-size: 14px;
   width: 100%; }
-/* line 815, scss/style.scss */
+/* line 837, scss/style.scss */
 #wrapper figcaption p {
   padding: 10px; }
 
-/* line 821, scss/style.scss */
+/* line 843, scss/style.scss */
 footer {
   background: #484548 url(./img/dark_wood.png);
   text-align: center;
   min-height: 146px;
   box-shadow: 0px -3px 5px 1px #555; }
-/* line 828, scss/style.scss */
+/* line 850, scss/style.scss */
 footer a:hover {
   -webkit-text-shadow: 0px 0px 8px #111;
   -moz-text-shadow: 0px 0px 8px #111;
@@ -932,12 +954,12 @@ footer a:hover {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px; }
-/* line 839, scss/style.scss */
+/* line 861, scss/style.scss */
 footer > div.contain > div {
   width: 530px;
   display: inline-block;
   padding: 10px; }
-/* line 846, scss/style.scss */
+/* line 868, scss/style.scss */
 footer .menu {
   font: 18px/1.5 Open, Helvetica, Arial, "sans-serif";
   font-weight: bold;
@@ -967,24 +989,24 @@ footer .menu li:last-child {
 /* line 50, ../../../../../../../Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 footer .menu li.last {
   padding-right: 0; }
-/* line 853, scss/style.scss */
+/* line 875, scss/style.scss */
 footer .menu li:first-child {
   width: 80px; }
-/* line 857, scss/style.scss */
+/* line 879, scss/style.scss */
 footer .menu li {
   width: 110px; }
-/* line 859, scss/style.scss */
+/* line 881, scss/style.scss */
 footer .menu li a {
   color: #53c653; }
-/* line 866, scss/style.scss */
+/* line 888, scss/style.scss */
 footer .socio {
   font-size: 70px;
   line-height: 1.5;
   font-family: 'Socialico'; }
-/* line 870, scss/style.scss */
+/* line 892, scss/style.scss */
 footer .socio li {
   min-width: 80px; }
-/* line 874, scss/style.scss */
+/* line 896, scss/style.scss */
 footer .socio a {
   display: block;
   color: #bbbbbb;
@@ -998,7 +1020,7 @@ footer .socio a {
   -moz-transition: all 0.1s linear;
   -o-transition: all 0.1s linear;
   transition: all 0.1s linear; }
-/* line 886, scss/style.scss */
+/* line 908, scss/style.scss */
 footer .socio a:hover {
   color: #2c872c;
   -webkit-text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD;
@@ -1006,7 +1028,7 @@ footer .socio a:hover {
   -ms-text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD;
   -o-text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD;
   text-shadow: -1px -1px 1px #111, 1px 1px 1px #DDD; }
-/* line 897, scss/style.scss */
+/* line 919, scss/style.scss */
 footer .socio ul {
   margin: 0;
   padding: 0;
@@ -1033,7 +1055,7 @@ footer .socio ul li:last-child {
 /* line 50, ../../../../../../../Prepros/gems/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_horizontal-list.scss */
 footer .socio ul li.last {
   padding-right: 0; }
-/* line 902, scss/style.scss */
+/* line 924, scss/style.scss */
 footer p {
   position: absolute;
   bottom: 0px;
