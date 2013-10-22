@@ -1,7 +1,9 @@
 <!doctype html>
-<html lang="<?php bloginfo( 'language' ); ?>">
+<html lang="<?php bloginfo( 'language' ); ?>" prefix="og: http://ogp.me/ns#">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta property="og:image" content="<?php bloginfo('template_url'); ?>/img/logoa.png">
+	<meta property="og:description" content="Portefolio de Damien Roelens, infographiste, web developper et web designer">
 	<title><?php bloginfo( 'name' ) ?></title>
 	<link rel="shortcut icon" type="image/png" href="<?php bloginfo('template_url'); ?>/img/favicon.png" />
 	<link rel="stylesheet" href="<?php echo(get_stylesheet_uri()); ?>">
