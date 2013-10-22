@@ -43,6 +43,7 @@ body{
 
 header{
 	background: #111 url(./img/dark_wood.png);
+	
 }
 div.contain{
 	width:1200px;
@@ -100,7 +101,7 @@ nav{
 	background: #484548 url(./img/px.png);
 	font: 16px/1.5 $fontStackNav ;
 	font-weight: bold;
-
+	box-shadow: 0px 1px 2px 1px #333 inset, 0px 1px 2px 1px #333;
 	&>ul{
 		@include horizontal-list();
 		padding:0;
@@ -292,12 +293,13 @@ aside{
 }
 section.blacky{
 	background: #282528 url(./img/dark_wood.png);
+	box-shadow: 0px -2px 4px 1px #555, 0px 2px 4px 1px #555;
 	color:#eee;
 	padding-bottom:40px;
 	padding-top:40px;
 }
 section#present{
-	
+	box-shadow: 0px -2px 4px 1px #555, 0px 2px 4px 1px #555;
 	background: #282528 url(./img/dark_wood.png);
 	color:#eee;
 	padding-bottom:40px;
@@ -369,20 +371,12 @@ section#present{
 		padding-left: 40px;
 		border-radius: 5px;
 		padding-bottom: 40px;
-	}
-	& .trava:nth-child(2n){
-		background: url(./img/binding_light.png);
+		box-shadow: 0px 0px 2px 2px #CCC;
 	}
 	& .trava:nth-child(2n+1){
-		background: url(./img/binding_dark.png);
-		color:#eee;
-		& ul>li:nth-child(3n) a{
-		background-color: #eee;
-		border-radius: 10px;
-		padding:8px;
-		padding-top:3px;
-		padding-bottom:5px;
-	}
+		background: rgba(100,100,100,0.1);
+		box-shadow: 0px 0px 2px 2px #AAA;
+
 	}
 	
 	& ul>li:nth-child(3n) a{
@@ -430,7 +424,8 @@ section#present{
 	& .info, & form{
 		width:43%;
 		display:inline-block;
-		background-color: #eeedee;
+		background-color: rgba(230,230,230,0.7);
+		box-shadow: 0px 0px 2px 2px #CCC;
 		border-radius:5px;
 		padding:20px;
 	}
@@ -502,9 +497,10 @@ section#present{
 			}
 			& input, & textarea{
 				width:68%;
+
 			}
 			& label{
-				width: 20%;
+				width:20%;
 				vertical-align: top;
 			}
 			& input[type=button]{
@@ -603,7 +599,7 @@ section#present{
   background: #484548 url(./img/dark_wood.png);
   opacity: 1;
   color:#eeeeee;
-  border:1px solid #39ad39;
+  border:1px solid #555;
 }
 // faces
 .cube-face-front {
@@ -720,9 +716,12 @@ section#wrapper{
 	& img{
 		width:32%;
 		height:32%;
+		box-shadow: 0px 0px 3px 2px #AAA;
 	}
 	& figcaption{
 		display:none;
+		box-shadow: 2px 2px 2px #333;
+
 	}
 	&:nth-child(2n+1) figcaption{
 		bottom:42px;
@@ -798,7 +797,7 @@ progress::-moz-progress-bar{
 	position:absolute;
 	max-height:420px;
 	color:#EEE;
-	background-color: rgba(26,26,26,0.7);
+	background-color: rgba(26,26,26,0.9);
 	padding:0px 0px;
 	width:25%;
 	margin:40px;
@@ -824,6 +823,7 @@ progress::-moz-progress-bar{
 	background: #484548 url(./img/dark_wood.png);
 	text-align: center;
 	min-height: 146px;
+	box-shadow: 0px -3px 5px 1px #555;
 
 	& a:hover{
 			-webkit-text-shadow: 0px 0px 8px #111;
@@ -864,7 +864,9 @@ progress::-moz-progress-bar{
 
 
 	& .socio{
-		font:70px/1.5 'Socialico';
+		font-size:70px;
+		line-height: 1.5;
+		font-family: 'Socialico';
 		& li{
 				min-width:80px;
 		}

@@ -18,8 +18,6 @@
 			marginBottom : '1px',
 			display: 'block'
 	});
-
-
 	
 	$('#radio-front+label,#radio-top+label').click(function(){animBar()});
 
@@ -83,5 +81,7 @@
 	            cont.removeClass("cont-up");
 	        }
 	    });
+
+	    
 
 }).call(this,jQuery);

@@ -23,7 +23,7 @@
 	<section class="blacky" id="description">
 		<div class="contain">
 			<h3><?php _e('Description du projet') ?></h3>
-			<img src="" alt="" />
+			<img src="<?php the_field('image_description_projet') ?>" alt="" width="200" height="200" />
 			<p><?php the_content() ?></p>
 			</div>
 					<?php endwhile; ?>
