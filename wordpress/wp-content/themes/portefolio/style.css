@@ -138,7 +138,7 @@ body {
 
 /* line 44, scss/style.scss */
 header {
-  background: #111111 url(./img/dark_wood.png); }
+  background: #111111 url(./img/dark_wood.png) 0 80px; }
 
 /* line 48, scss/style.scss */
 div.contain {

@@ -26,7 +26,9 @@
 			<p>&copy; All Rights Reserved 2013</p>
 		</div>
 	</footer>
+	
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.js"></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.cookie.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/min/script.min.js"></script>
 </body>
 </html>

@@ -214,8 +214,32 @@
 
 
 	};
+	var OnComplete = function() {
+		$('#present').css({
+		boxShadow:'0px 0px 5px 3px #555'
+			});
+		};
+
 	$( '#description img' ).heplbox();
 
+	if( $.cookie('visited')){
+        // Your code here
+
+    } else {
+        $.cookie('visited', 'yes', { expires: 1 });
+        $( '#present' )
+		.on("load")
+		.css({
+			position:'relative',
+			top:'-623px',
+			boxShadow:'none',
+			height:'1000px'
+	}).delay(1000).animate({
+		top:'+=623px',
+		height:'256px'
+	},4000,'swing' ,OnComplete);
+    }
+	
 	    
 
 }).call(this,jQuery);
