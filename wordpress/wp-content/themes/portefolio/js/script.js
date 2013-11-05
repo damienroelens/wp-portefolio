@@ -18,28 +18,6 @@
 			marginBottom : '1px',
 			display: 'block'
 	});
-	
-	$('#radio-front+label,#radio-top+label').click(function(){animBar()});
-
-	var animBar = function(){$('progress').each(function(){
-    var interval = 2, //How much to increase the progressbar per frame
-        updatesPerSecond = 10, //Set the nr of updates per second (fps)
-        progress =  $(this),
-        progressMax = progress.val();
-        progress.val(0);
-    var animator = function(){
-            progress.val(progress.val()+interval);
-            
-	            if ( progress.val()+interval < progressMax){
-	               setTimeout(animator, updatesPerSecond);
-	            } else { 
-	                progress.val(progressMax);
-	            }
-
-        }
-    setTimeout(animator, updatesPerSecond);
-	})};
-	animBar();
 
 	var trombinext = function () {
 		var $current, $next;
@@ -223,21 +201,34 @@
 	$( '#description img' ).heplbox();
 
 	if( $.cookie('visited')){
-        // Your code here
+		
 
     } else {
         $.cookie('visited', 'yes', { expires: 1 });
-        $( '#present' )
+        var $bienve = $('<div class=\"welcome\"><h2>Bienvenue</h2></div>')
+			.css({
+				display:'block',
+				fontSize:'60px',
+				fontFamily:'Lane',
+				color:'#39AD39',
+				padding:'40px',
+				marginBottom:'540px'
+			});
+		$bienve.prependTo('body #present .contain');
+         $( '#present' )
 		.on("load")
 		.css({
 			position:'relative',
 			top:'-623px',
 			boxShadow:'none',
-			height:'1000px'
-	}).delay(1000).animate({
+			minHeight:'500px'
+	}).delay(3000).animate({
 		top:'+=623px',
-		height:'256px'
+		minHeight:'256px'
 	},4000,'swing' ,OnComplete);
+	$bienve.delay(2000).animate({height:'toggle',margin:'toggle',opacity:'0'},5000,'linear',function(){
+			$bienve.remove();
+			});
     }
 	
 	    

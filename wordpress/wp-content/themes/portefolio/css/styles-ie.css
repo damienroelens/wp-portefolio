@@ -1,6 +1,6 @@
 .scene {
   margin-top: 50px;
-  width:600px;
+  width:500px;
   height:400px;
   -webkit-perspective: none;
   perspective: none;
@@ -24,7 +24,6 @@
 }
 .comp .cube-face * div{
   position: relative;
-  background: red;
 }
 // faces
 .cube-face-front {
@@ -76,10 +75,11 @@
   transform: none; 
   z-index:3;
 } 
-#radio-back:checked ~ .scene .cube {
+#radio-back:checked ~ .scene .cube-face-back {
   -webkit-transform: none; 
   -ms-transform: none; 
   transform: none; 
+  z-index:3;
 } 
 #radio-left:checked ~ .scene .cube-face-left {
   -webkit-transform: none; 

@@ -19,7 +19,7 @@ Template Name:mail
 				$expediteur = htmlspecialchars($_POST['Email']);
 				$sujet = htmlspecialchars($_POST['Prenom']).' '.htmlspecialchars($_POST['Nom']) ;
 				$objet = 'Damien-Roelens.be, courrier venant de ' . $sujet; // Objet du message
-				$message = htmlspecialchars($_POST['Message']);
+				$message = '<div style="color:red">'.htmlspecialchars($_POST['Message']).'</div>';
 				$syntaxe = '#^[\w.-]+@[\w.-]+\.[a-zA-Z]{2,6}$#';
 				$syntaxe2 = '#\w*\s\w*#';
 				if (preg_match($syntaxe,$expediteur))

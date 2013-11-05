@@ -14,6 +14,7 @@ Template name:Propos
 	$form = get_field_object('field_52625979fdaef'); 
 	$lang = get_field_object('field_52625989fdaf0');
 	$cent = get_field_object('field_526259abfdaf1'); 
+	$qual = get_field_object('field_52694ec91bf60'); 
 ?>
 
 <section class="propos">
@@ -30,33 +31,76 @@ Template name:Propos
 				<label for="radio-top"><?php echo $lang['label'] ?></label>   
 				<input type="radio" id="radio-bottom" name="select-face"/>
 				<label for="radio-bottom"><?php echo $cent['label'] ?></label>   
+				<input type="radio" id="radio-back" name="select-face"/>
+				<label for="radio-back"><?php echo $qual['label'] ?></label> 
 				<div class="scene">
 				  <div class="cube">
 				      <div class="cube-face  cube-face-front">
 				      	<h4><?php echo $comp['label'] ?></h4>
 				      	<dl>
 				      		<dt>HTML 5</dt>
-				      		<dd><progress max="100" value="90"></progress></dd>
+				      		<dd>
+				      			<div class="progress">
+				      				<div class="progress-bar ht"></div>
+				      			</div>
+				      		</dd>
 				      		<dt>Photoshop</dt>
-				      		<dd><progress max="100" value="75"></progress></dd>
+				      		<dd>
+				      			<div class="progress">
+				      				<div class="progress-bar ps"></div>
+				      			</div>
+				      		</dd>
 				      		<dt>Javascript</dt>
-				      		<dd><progress max="100" value="85"></progress></dd>
+				      		<dd>
+				      			<div class="progress">
+				      				<div class="progress-bar js"></div>
+				      			</div>
+				      		</dd>
 				      		<dt>PHP</dt>
-				      		<dd><progress max="100" value="70"></progress></dd>
+				      		<dd>
+				      			<div class="progress">
+				      				<div class="progress-bar ph"></div>
+				      			</div>
+				      		</dd>
 				      	</dl>
 				      	<dl>
 				      		<dt>CSS3</dt>
-				      		<dd><progress max="100" value="85"></progress></dd>
+				      		<dd>
+				      			<div class="progress">
+				      				<div class="progress-bar cs"></div>
+				      			</div>
+				      		</dd>
 				      		<dt>Illustrator</dt>
-				      		<dd><progress max="100" value="85"></progress></dd>
+				      		<dd>
+				      			<div class="progress">
+				      				<div class="progress-bar il"></div>
+				      			</div>
+				      		</dd>
 				      		<dt>JQuery</dt>
-				      		<dd><progress max="100" value="60"></progress></dd>
+				      		<dd>
+				      			<div class="progress">
+				      				<div class="progress-bar jq"></div>
+				      			</div>
+				      		</dd>
 				      		<dt>MySQL</dt>
-				      		<dd><progress max="100" value="65"></progress></dd>
+				      		<dd>
+				      			<div class="progress">
+				      				<div class="progress-bar sql"></div>
+				      			</div>
+				      		</dd>
 				      	</dl>
 				      	<p>CMS : Spip et Wordpress</p>
 				      </div>
-				      <div class="cube-face  cube-face-back"></div>
+				      <div class="cube-face  cube-face-back">
+				      	<h4><?php echo $qual['label'] ?></h4>
+				      		<ul>
+				      			<li>Conscencieux</li>
+				      			<li>Perfectionniste</li>
+				      			<li>Travailleur</li>
+				      			<li>Assidu</li>
+				      			<li>Autonome</li>
+				      		</ul>
+				      </div>
 				      <div class="cube-face  cube-face-left">
 				      	<h4><?php echo $expe['label'] ?></h4>
 				      	  <ul>
@@ -76,11 +120,17 @@ Template name:Propos
 				      <div class="cube-face  cube-face-top"><h4><?php echo $lang['label'] ?></h4>
 						<dl>
 				      		<dt>Français</dt>
-				      		<dd><progress max="100" value="100"></progress></dd>
+				      		<dd><div class="progress">
+				      				<div class="progress-bar fr"></div>
+				      			</div></dd>
 				      		<dt>Anglais</dt>
-				      		<dd><progress max="100" value="85"></progress></dd>
+				      		<dd><div class="progress">
+				      				<div class="progress-bar en"></div>
+				      			</div></dd>
 				      		<dt>Neerlandais</dt>
-				      		<dd><progress max="100" value="55"></progress></dd>
+				      		<dd><div class="progress">
+				      				<div class="progress-bar nl"></div>
+				      			</div></dd>
 				      	</dl>
 				      </div>
 				      <div class="cube-face  cube-face-bottom"><h4><?php echo $cent['label'] ?></h4>

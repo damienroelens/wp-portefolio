@@ -4,6 +4,7 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta property="og:image" content="<?php bloginfo('template_url'); ?>/img/logoa.png">
 	<meta property="og:description" content="Portefolio de Damien Roelens, infographiste, web developper et web designer">
+	<meta name="google-site-verification" content="7lFbBN01n0knQR5rrv7MrHOGJxMg9JpV00-0TstxiRA" />
 	<title><?php bloginfo( 'name' ) ?></title>
 	<link rel="shortcut icon" type="image/png" href="<?php bloginfo('template_url'); ?>/img/favicon.png" />
 	<link rel="stylesheet" href="<?php echo(get_stylesheet_uri()); ?>">
@@ -16,7 +17,7 @@
 <body>
 	<header>
 		<div class="contain">
-			<h1><a href="<?php echo(site_url()); ?>"><?php $tit=get_bloginfo('name'); echo(substr($tit,0,14)) ?></a></h1>
+			<h1><a href="<?php echo(site_url()); ?>"><?php bloginfo( 'name' ) ?></a></h1>
 			<p><em>&lt; </em><?php  _e('Web Developper') ?><em>/</em> <?php  _e('Web Designer') ?> <em>&gt;</em></p>
 		</div>
 	</header>

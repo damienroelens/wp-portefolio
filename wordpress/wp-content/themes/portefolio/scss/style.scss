@@ -42,7 +42,7 @@ body{
 }
 
 header{
-	background: #111 url(./img/dark_wood.png) 0 80px;
+	background: #111 url(./img/dark_wood.png) 0 99px;
 	
 }
 div.contain{
@@ -293,6 +293,11 @@ aside{
 	& div.contain{
 		min-height: 284px;
 	}
+	& img+p,& p:last-child{
+		width:0;
+		height:0;
+		display:none;
+	}
 }
 section.blacky{
 	background: #282528 url(./img/dark_wood.png);
@@ -503,6 +508,10 @@ section#present{
 			}
 			& input, & textarea{
 				width:68%;
+				border-radius: 5px;
+				box-shadow: 1px 1px 2px 0px #999 inset;
+				border:1px solid #ccc;
+				background:transparent url('./img/cream_pixels.png');
 
 			}
 			& label{
@@ -511,9 +520,14 @@ section#present{
 			}
 			& input[type=submit]{
 				width:96%;
+				background-image: none;
 				background-color: #39ad39;
 				color:#eee;
 				height:40px;
+				border:none;
+				border-radius: 0px;
+				box-shadow:1px 1px 1px #999;
+				font-size: 18px;
 			}
 			& input[type=submit]:hover{
 				background-color: darken(#39AD39,20%);
@@ -686,6 +700,11 @@ section#present{
   -ms-transform: rotateX(90deg) rotateZ(10deg); 
   transform: rotateX(90deg) rotateZ(10deg); 
 }
+#radio-back:checked ~ .scene .cube {
+  -webkit-transform: rotateX(-180deg) rotateY(10deg) rotateZ(180deg); 
+  -ms-transform: rotateX(-180deg) rotateY(10deg) rotateZ(180deg); 
+  transform: rotateX(-180deg) rotateY(10deg) rotateZ(180deg);
+}
 
 
 .comp {
@@ -756,26 +775,80 @@ section#wrapper{
 			right:0;
 	}
 }
-progress{
-	-webkit-appearance: none;
-	-moz-appearance: none;
-   appearance: none;
+.progress{
 	height:25px;
 }
-progress::-webkit-progress-bar, {
+.progress {
   background-color: #eee;
-
   border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
 }
-progress::-webkit-progress-value{
+.progress-bar{
 	background-color: #39ad39;
 	box-shadow: 0px -10px 20px rgba(255, 255, 255, 0.25) inset;
+	height:25px;
+	width:0;
 }
-progress::-moz-progress-bar{
-	background-color: #39ad39;
-	box-shadow: 0px -10px 20px rgba(255, 255, 255, 0.25) inset;
+
+@keyframes anim90{
+	from{width: 0%;}
+	to{width:90%;}
 }
+@-webkit-keyframes anim90{
+	from{width: 0%;}
+	to{width:90%;}
+}
+@keyframes anim75{
+	from{width: 0%;}
+	to{width:75%;}
+}
+@-webkit-keyframes anim75{
+	from{width: 0%;}
+	to{width:75%;}
+}
+@keyframes anim60{
+	from{width: 0%;}
+	to{width:60%;}
+}
+@-webkit-keyframes anim60{
+	from{width: 0%;}
+	to{width:60%;}
+}
+@keyframes anim70{
+	from{width: 0%;}
+	to{width:70%;}
+}
+@-webkit-keyframes anim70{
+	from{width: 0%;}
+	to{width:70%;}
+}
+@keyframes anim100{
+	from{width: 0%;}
+	to{width:100%;}
+}
+@-webkit-keyframes anim100{
+	from{width: 0%;}
+	to{width:100%;}
+}
+@keyframes anim60{
+	from{width: 0%;}
+	to{width:60%;}
+}
+@-webkit-keyframes anim60{
+	from{width: 0%;}
+	to{width:60%;}
+}
+@keyframes anim80{
+	from{width: 0%;}
+	to{width:80%;}
+}
+@-webkit-keyframes anim80{
+	from{width: 0%;}
+	to{width:80%;}
+}
+
+
+
 .cube {
 	& dt{
 		margin:10px;
@@ -808,10 +881,77 @@ progress::-moz-progress-bar{
 	}
 	& .cube-face-top dl{
 		width:360px;
-		& progress{
+		& .progress{
 			width:320px;
 		}
 	}
+}
+
+#radio-front:checked ~ .scene .progress-bar.ht{
+	-webkit-animation:anim90 2s ;
+	-moz-animation:anim90 2s ;
+	animation:anim90 2s ;
+	width:90%;
+}
+#radio-front:checked ~ .scene .progress-bar.ps{
+	-webkit-animation:anim75 2s ;
+	-moz-animation:anim75 2s ;
+	animation:anim75 2s ;
+	width:75%;
+}
+#radio-front:checked ~ .scene .progress-bar.js{
+	-webkit-animation:anim80 2s ;
+	-moz-animation:anim80 2s ;
+	animation:anim80 2s ;
+	width:80%;
+}
+#radio-front:checked ~ .scene .progress-bar.cs{
+	-webkit-animation:anim90 2s ;
+	-moz-animation:anim90 2s ;
+	animation:anim90 2s ;
+	width:90%;
+}
+#radio-front:checked ~ .scene .progress-bar.jq{
+	-webkit-animation:anim60 2s ;
+	-moz-animation:anim60 2s ;
+	animation:anim60 2s ;
+	width:60%;
+}
+#radio-front:checked ~ .scene .progress-bar.sql{
+	-webkit-animation:anim70 2s ;
+	-moz-animation:anim70 2s ;
+	animation:anim70 2s ;
+	width:70%;
+}
+#radio-top:checked ~ .scene .progress-bar.fr{
+	-webkit-animation:anim100 2s ;
+	-moz-animation:anim100 2s ;
+	animation:anim100 2s ;
+	width:100%;
+}
+#radio-top:checked ~ .scene .progress-bar.nl{
+	-webkit-animation:anim60 2s ;
+	-moz-animation:anim60 2s ;
+	animation:anim60 2s ;
+	width:60%;
+}
+#radio-top:checked ~ .scene .progress-bar.en{
+	-webkit-animation:anim75 2s ;
+	-moz-animation:anim75 2s ;
+	animation:anim75 2s ;
+	width:75%;
+}
+#radio-front:checked ~ .scene .progress-bar.ph{
+	-webkit-animation:anim75 2s ;
+	-moz-animation:anim75 2s ;
+	animation:anim75 2s ;
+	width:75%;
+}
+#radio-front:checked ~ .scene .progress-bar.il{
+	-webkit-animation:anim90 2s ;
+	-moz-animation:anim90 2s ;
+	animation:anim90 2s ;
+	width:90%;
 }
 
 #wrapper figcaption
@@ -930,3 +1070,24 @@ progress::-moz-progress-bar{
 	}
 
  }
+
+@media screen and (max-width:480px) {
+	body{
+		& .contain{
+			width:100%;
+		}
+		& nav{
+			
+		}
+		& nav li{
+			display:block;
+			float:none;
+			padding:10px;
+			text-align:left;
+			padding-left:100px;
+		}
+		& nav li:first-child{
+			padding-left:100px;
+		}
+	}
+}
