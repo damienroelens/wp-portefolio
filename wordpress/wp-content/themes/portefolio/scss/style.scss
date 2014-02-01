@@ -16,6 +16,7 @@ Text Domain: portefolio
 @import "compass/reset";
 $icons-spacing: 20px;
 $size: 400px; //taille du cube page à propos
+$sized: 200px;
 @import "icons/*.png";
 @include all-icons-sprites;
 
@@ -743,7 +744,7 @@ section#wrapper.cont-up{
  	margin-top: 80px;
  }
 
-section#wrapper{
+#wrapper{
 	margin-top:40px;
 
 	& h2{
@@ -1071,23 +1072,265 @@ section#wrapper{
 
  }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:680px) {
 	body{
+		position:relative;
 		& .contain{
 			width:100%;
 		}
 		& nav{
-			
+			display:none;
+			width:80%;
+			position:absolute;
+			top:0;
+			z-index:3;
+			background-color: rgb(100, 100, 100);
+			background-image: none;
+			&:hover{
+				display:block;
+			}
+			& ul{
+				width:100%;
+			}
 		}
 		& nav li{
+			width:100%;
 			display:block;
 			float:none;
-			padding:10px;
-			text-align:left;
-			padding-left:100px;
+			padding:0;
+			margin:0;
+			border-bottom:1px solid grey;
+			background-image: none;
+			text-align: center;
+			& a{
+				display:block;
+				padding:30px 0;
+				color:white;
+				width:100%;
+				font-size:22px;
+			}
+			& span.icon-sprite{
+				padding:0;
+				background: none;
+			}
 		}
-		& nav li:first-child{
-			padding-left:100px;
+		& nav li:last-child{
+			border:none;
 		}
 	}
+	section h3{
+		width:90%;
+		padding:20px;
+		font-weight:bold;
+		box-sizing:border-box;
+	}
+
+	header{
+		width:100%;
+		
+
+		& h1{
+			height:80px;
+			background-position: 20px 25px;
+			
+		}
+		& h1 a{
+			display:none;
+		}
+
+		& p{
+			font-size:14px;
+			margin-right:20px;
+		}
+	}
+	#wrapper{
+		width:100%;
+		margin:0;
+		& figure{
+			& figcaption{
+				visibility:hidden;
+			}
+		}
+	}
+	div.contain{
+		width:100%;
+	}
+	section#present{
+		& h3{
+			width:90%;
+			padding:20px;
+			font-weight:bold;
+			box-sizing:border-box;
+			padding-top:0;
+		}
+		& div.presimg{
+			margin:10px auto;
+			display:block;
+			width:160px;
+		}
+		& p{
+			font-size:18px;
+			display: block;
+			width:100%;
+			box-sizing:border-box;
+			margin:0 auto;
+			padding:20px;
+		}
+		& div+p{
+			margin:0;
+		}
+	}
+	section#catwork{
+		width:100%;
+		& div.contain h3{
+			width:90%;
+			padding:20px;
+			font-weight:bold;
+			box-sizing:border-box;
+			padding-top:0;
+			text-align: left;
+		}
+		& div.contain{
+			width:100%;
+			margin:0;
+			text-align: center;
+			& figure{
+				margin: 0 auto;
+			}
+		}
+		& aside{
+			display: block;
+			margin-top:30px;
+			width:100%;
+			margin:0;
+			& h4{
+				padding:20px;
+				padding-top: 30px;
+				font-weight: bold;
+			}
+			& li{
+				box-sizing:border-box;
+				width:90%;
+				margin:10px 20px;
+				& a{
+					box-sizing:border-box;
+					border-radius:5px;
+					border:1px solid #333;
+					padding:20px;
+					&:hover{
+						border:none;
+					}
+				}
+			}
+		}
+	}
+	footer{
+		width:100%;
+		min-height: 80px;
+		& div.contain{
+			width:100%;
+			box-sizing:border-box;
+			& div.socio{
+				width:100%;
+				box-sizing:border-box;
+				line-height: 1;
+				& ul{
+					padding-left: 0;
+					display:inline-block;
+				}
+			}
+			& div.menu{
+				display:none;
+			}
+			& p{
+				display:none;
+			}
+		}
+	}
+	.contac{
+		text-align: center;
+		margin: auto;
+		& h3{
+			text-align: left;
+		}
+	}
+	.contac .info{
+		& div.presimg{
+			width:210px;
+			display:block;
+			float:none;
+			margin:0 auto 20px;
+		}
+	}
+
+	.contac form,.contac .info{
+		width:80%;
+		margin:20px 0;
+		display:inline-block;
+		& .icons-sprite, .icons-code, .icons-home, .icons-mail2, .icons-mobile, .icons-pencil, .icons-profile, .icons-wordpress{
+			background-image: none;
+		}
+	}
+	.contac form fieldset{
+		padding:0;
+	}
+	.contac form fieldset input, .contac form fieldset textarea{
+		width:90%;
+		min-height:30px;
+		font-size:18px;
+	}
+	.contac form fieldset label{
+		width:90%;
+	}
+	.scene{
+		margin-top: 50px;
+		width: $sized;
+		height: $sized;
+		-webkit-perspective: $sized*4;
+		perspective: $sized*4;
+		bottom:170px;right:20px;
+		top:inherit;
+	}
+	.cube-face{
+	overflow-y:scroll;
+	overflow-x:hidden;
+	}
+
+	.cube-face-front {
+
+	-webkit-transform: translate3d(0, 0, $sized/2);
+	-ms-transform: translate3d(0, 0, $sized/2);
+	transform: translate3d(0, 0, $sized/2);
+	}  
+	.cube-face-back {
+
+	-webkit-transform:rotateY(180deg) translate3d(0, 0, $sized/2);
+	-ms-transform: rotateY(180deg) translate3d(0, 0, $sized/2);
+	transform: rotateY(180deg) translate3d(0, 0, $sized/2);
+	} 
+	.cube-face-left {
+
+	-webkit-transform: rotateY(-90deg) translate3d(0, 0, $sized/2);
+	-ms-transform: rotateY(-90deg) translate3d(0, 0, $sized/2);
+	transform: rotateY(-90deg) translate3d(0, 0, $sized/2);
+	} 
+	.cube-face-right {
+
+	-webkit-transform: rotateY(90deg) translate3d(0, 0, $sized/2);
+	-ms-transform: rotateY(90deg) translate3d(0, 0, $sized/2);
+	transform: rotateY(90deg) translate3d(0, 0, $sized/2);
+	} 
+	.cube-face-top {
+
+	-webkit-transform: rotateX(90deg) translate3d(0, 0, $sized/2);
+	-ms-transform: rotateX(90deg) translate3d(0, 0, $sized/2);
+	transform: rotateX(90deg) translate3d(0, 0, $sized/2);
+	} 
+	.cube-face-bottom {
+
+	-webkit-transform: rotateX(-90deg) translate3d(0, 0, $sized/2);
+	-ms-transform: rotateX(-90deg) translate3d(0, 0, $sized/2);
+	transform: rotateX(-90deg) translate3d(0, 0, $sized/2);
+	}  
 }
+

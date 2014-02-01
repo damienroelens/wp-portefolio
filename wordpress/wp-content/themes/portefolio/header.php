@@ -5,6 +5,7 @@
 	<meta property="og:image" content="<?php bloginfo('template_url'); ?>/img/logoa.png">
 	<meta property="og:description" content="Portefolio de Damien Roelens, infographiste, web developper et web designer">
 	<meta name="google-site-verification" content="7lFbBN01n0knQR5rrv7MrHOGJxMg9JpV00-0TstxiRA" />
+	<meta content="width=device-width,height=device-height, initial-scale=1,minimum-scale=1, maximum-scale=1.0, user-scalable=0, target-densitydpi=device-dpi" name="viewport">
 	<title><?php bloginfo( 'name' ) ?></title>
 	<link rel="shortcut icon" type="image/png" href="<?php bloginfo('template_url'); ?>/img/favicon.png" />
 	<link rel="stylesheet" href="<?php echo(get_stylesheet_uri()); ?>">
@@ -15,7 +16,7 @@
 	<script async type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/modernizr.js"></script>
 </head>
 <body>
-	<header>
+	<header ontouchstart="showMenu();">
 		<div class="contain">
 			<h1><a href="<?php echo(site_url()); ?>"><?php bloginfo( 'name' ) ?></a></h1>
 			<p><em>&lt; </em><?php  _e('Web Developper') ?><em>/</em> <?php  _e('Web Designer') ?> <em>&gt;</em></p>

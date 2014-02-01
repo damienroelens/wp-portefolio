@@ -5,9 +5,10 @@
 		$trombiPhotos;
 
 	var $phtos = $('#wrapper img').css({
-			width : '1200px',
-			height : '500px'
+			width : '100%',
+			height : '100%'
 	});
+
 
 	var $figu = $('#wrapper figure').css({
 			display : 'block'
@@ -49,7 +50,7 @@
 			  }};
 
 
-	    
+	    if($(window).width()>680){
 	    $(window).scroll(function () {
 	        if ($(this).scrollTop() > 100) {
 	            nav.addClass("f-nav");
@@ -59,6 +60,22 @@
 	            cont.removeClass("cont-up");
 	        }
 	    });
+	} else {
+		$('header').click(function(){
+			
+			if($('nav').is(':visible')){
+				$('nav').hide();
+			} else {
+				$('nav').show();
+			}
+		});
+		$('section').click(function(){
+			if($('nav').is(':visible')){
+				$('nav').hide();
+			}
+		});		
+
+	}
 
 	    
 
@@ -183,11 +200,6 @@
 
 	};
 	setup();
-
-	return this.each( function() {
-		aElements.push( $(this).attr("src"));
-		$(this).on("click", elementClicked);
-	});
 
 
 
